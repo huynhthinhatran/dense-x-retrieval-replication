@@ -1,0 +1,13 @@
+,,NQ MRR@100,SQUAD MRR@100
+SimCSE,passage,26.7,33.9
+SimCSE,sentence,35.0,41.5
+SimCSE,proposition,41.1,44.8
+Contriever,passage,33.6,49.5
+Contriever,sentence,34.6,54.1
+Contriever,proposition,37.1,58.6
+DPR,passage,62.1,38.7
+DPR,sentence,62.1,42.8
+DPR,proposition,59.4,46.1
+GTR,passage,59.0,57.7
+GTR,sentence,58.9,64.0
+GTR,proposition,59.6,67.5

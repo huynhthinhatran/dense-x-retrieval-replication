@@ -1,0 +1,4 @@
+granularity,#units,#pages,units/page (mean),units/passage (mean),avg words,median words,paper avg words,% units from gold pages
+passage,78537,8000,9.8,1.0,62.5,62,58.5,32.1
+sentence,224133,8000,28.0,2.85,21.9,20,21.0,34.7
+proposition,506413,8000,63.3,6.45,11.5,11,11.2,34.9

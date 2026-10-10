@@ -1,0 +1,558 @@
+{
+ "seed": 42,
+ "pages": {
+  "gold_pages_total": 537,
+  "gold_squad": 45,
+  "gold_nq": 492,
+  "gold_shared_squad_nq": 0,
+  "distractor_pages": 7463,
+  "distractor_pool_size": 2200991,
+  "corpus_pages": 8000,
+  "shards_used": 367
+ },
+ "leak": {
+  "squad_test_questions": 10570,
+  "squad_exact_overlap_with_train": 8,
+  "squad_dev_train_title_overlap": 0,
+  "nq_test_questions": 3610,
+  "nq_exact_overlap_with_train": 0,
+  "strict_removed": true,
+  "retriever_training_note": {
+   "SimCSE": "unsupervised (Wikipedia sentences) — không thấy QA labels",
+   "Contriever": "unsupervised contrastive (Wikipedia + CC) — không thấy QA labels",
+   "DPR-multiset": "supervised trên TRAIN của NQ, TQA, WebQ, SQuAD → seen-distribution (paper gạch chân)",
+   "GTR": "pre-train forum QA + fine-tune MS MARCO"
+  }
+ },
+ "corpus_stats": [
+  {
+   "granularity": "passage",
+   "#units": 78537,
+   "#pages": 8000,
+   "units/page (mean)": 9.8,
+   "units/passage (mean)": 1.0,
+   "avg words": 62.5,
+   "median words": 62,
+   "paper avg words": 58.5,
+   "% units from gold pages": 32.1
+  },
+  {
+   "granularity": "sentence",
+   "#units": 224133,
+   "#pages": 8000,
+   "units/page (mean)": 28.0,
+   "units/passage (mean)": 2.85,
+   "avg words": 21.9,
+   "median words": 20,
+   "paper avg words": 21.0,
+   "% units from gold pages": 34.7
+  },
+  {
+   "granularity": "proposition",
+   "#units": 506413,
+   "#pages": 8000,
+   "units/page (mean)": 63.3,
+   "units/passage (mean)": 6.45,
+   "avg words": 11.5,
+   "median words": 11,
+   "paper avg words": 11.2,
+   "% units from gold pages": 34.9
+  }
+ ],
+ "answer_coverage": [
+  {
+   "dataset": "nq",
+   "answer_in_gold_page_pct": 82.0,
+   "answer_in_corpus_pct": 90.0,
+   "median_passages_with_answer": 6.0
+  },
+  {
+   "dataset": "squad",
+   "answer_in_gold_page_pct": 86.4,
+   "answer_in_corpus_pct": 90.2,
+   "median_passages_with_answer": 5.0
+  }
+ ],
+ "table3": [
+  {
+   "level_0": "SimCSE",
+   "level_1": "passage",
+   "NQ R@20": 57.6,
+   "NQ R@5": 39.0,
+   "SQUAD R@20": 58.6,
+   "SQUAD R@5": 45.2,
+   "Avg R@5": 42.1,
+   "Avg R@20": 58.1
+  },
+  {
+   "level_0": "SimCSE",
+   "level_1": "sentence",
+   "NQ R@20": 65.0,
+   "NQ R@5": 47.4,
+   "SQUAD R@20": 65.6,
+   "SQUAD R@5": 53.6,
+   "Avg R@5": 50.5,
+   "Avg R@20": 65.3
+  },
+  {
+   "level_0": "SimCSE",
+   "level_1": "proposition",
+   "NQ R@20": 71.0,
+   "NQ R@5": 55.2,
+   "SQUAD R@20": 67.8,
+   "SQUAD R@5": 55.0,
+   "Avg R@5": 55.1,
+   "Avg R@20": 69.4
+  },
+  {
+   "level_0": "Contriever",
+   "level_1": "passage",
+   "NQ R@20": 71.2,
+   "NQ R@5": 48.4,
+   "SQUAD R@20": 76.8,
+   "SQUAD R@5": 62.8,
+   "Avg R@5": 55.6,
+   "Avg R@20": 74.0
+  },
+  {
+   "level_0": "Contriever",
+   "level_1": "sentence",
+   "NQ R@20": 75.0,
+   "NQ R@5": 52.8,
+   "SQUAD R@20": 76.6,
+   "SQUAD R@5": 66.2,
+   "Avg R@5": 59.5,
+   "Avg R@20": 75.8
+  },
+  {
+   "level_0": "Contriever",
+   "level_1": "proposition",
+   "NQ R@20": 75.8,
+   "NQ R@5": 55.6,
+   "SQUAD R@20": 77.6,
+   "SQUAD R@5": 69.8,
+   "Avg R@5": 62.7,
+   "Avg R@20": 76.7
+  },
+  {
+   "level_0": "DPR",
+   "level_1": "passage",
+   "NQ R@20": 81.4,
+   "NQ R@5": 73.4,
+   "SQUAD R@20": 63.2,
+   "SQUAD R@5": 49.6,
+   "Avg R@5": 61.5,
+   "Avg R@20": 72.3
+  },
+  {
+   "level_0": "DPR",
+   "level_1": "sentence",
+   "NQ R@20": 81.8,
+   "NQ R@5": 74.2,
+   "SQUAD R@20": 66.2,
+   "SQUAD R@5": 52.4,
+   "Avg R@5": 63.3,
+   "Avg R@20": 74.0
+  },
+  {
+   "level_0": "DPR",
+   "level_1": "proposition",
+   "NQ R@20": 80.8,
+   "NQ R@5": 71.6,
+   "SQUAD R@20": 68.6,
+   "SQUAD R@5": 56.6,
+   "Avg R@5": 64.1,
+   "Avg R@20": 74.7
+  },
+  {
+   "level_0": "GTR",
+   "level_1": "passage",
+   "NQ R@20": 81.2,
+   "NQ R@5": 74.2,
+   "SQUAD R@20": 75.8,
+   "SQUAD R@5": 67.6,
+   "Avg R@5": 70.9,
+   "Avg R@20": 78.5
+  },
+  {
+   "level_0": "GTR",
+   "level_1": "sentence",
+   "NQ R@20": 81.2,
+   "NQ R@5": 73.0,
+   "SQUAD R@20": 78.4,
+   "SQUAD R@5": 73.0,
+   "Avg R@5": 73.0,
+   "Avg R@20": 79.8
+  },
+  {
+   "level_0": "GTR",
+   "level_1": "proposition",
+   "NQ R@20": 81.6,
+   "NQ R@5": 74.8,
+   "SQUAD R@20": 81.8,
+   "SQUAD R@5": 75.2,
+   "Avg R@5": 75.0,
+   "Avg R@20": 81.7
+  }
+ ],
+ "trend_holds_R@5": [
+  {
+   "retriever": "Contriever",
+   "dataset": "nq",
+   "Prop>Sent>Pass": true
+  },
+  {
+   "retriever": "Contriever",
+   "dataset": "squad",
+   "Prop>Sent>Pass": true
+  },
+  {
+   "retriever": "DPR",
+   "dataset": "nq",
+   "Prop>Sent>Pass": false
+  },
+  {
+   "retriever": "DPR",
+   "dataset": "squad",
+   "Prop>Sent>Pass": true
+  },
+  {
+   "retriever": "GTR",
+   "dataset": "nq",
+   "Prop>Sent>Pass": false
+  },
+  {
+   "retriever": "GTR",
+   "dataset": "squad",
+   "Prop>Sent>Pass": true
+  },
+  {
+   "retriever": "SimCSE",
+   "dataset": "nq",
+   "Prop>Sent>Pass": true
+  },
+  {
+   "retriever": "SimCSE",
+   "dataset": "squad",
+   "Prop>Sent>Pass": true
+  }
+ ],
+ "significant_prop_vs_pass": [
+  {
+   "retriever": "Contriever",
+   "dataset": "nq",
+   "k": 5,
+   "Δ (pp)": 7.2,
+   "McNemar p": 0.0005
+  },
+  {
+   "retriever": "Contriever",
+   "dataset": "nq",
+   "k": 20,
+   "Δ (pp)": 4.6,
+   "McNemar p": 0.0018
+  },
+  {
+   "retriever": "Contriever",
+   "dataset": "squad",
+   "k": 5,
+   "Δ (pp)": 7.0,
+   "McNemar p": 0.0001
+  },
+  {
+   "retriever": "Contriever",
+   "dataset": "squad",
+   "k": 20,
+   "Δ (pp)": 0.8,
+   "McNemar p": 0.5966
+  },
+  {
+   "retriever": "DPR",
+   "dataset": "nq",
+   "k": 5,
+   "Δ (pp)": -1.8,
+   "McNemar p": 0.2221
+  },
+  {
+   "retriever": "DPR",
+   "dataset": "nq",
+   "k": 20,
+   "Δ (pp)": -0.6,
+   "McNemar p": 0.5811
+  },
+  {
+   "retriever": "DPR",
+   "dataset": "squad",
+   "k": 5,
+   "Δ (pp)": 7.0,
+   "McNemar p": 0.0002
+  },
+  {
+   "retriever": "DPR",
+   "dataset": "squad",
+   "k": 20,
+   "Δ (pp)": 5.4,
+   "McNemar p": 0.0004
+  },
+  {
+   "retriever": "GTR",
+   "dataset": "nq",
+   "k": 5,
+   "Δ (pp)": 0.6,
+   "McNemar p": 0.7493
+  },
+  {
+   "retriever": "GTR",
+   "dataset": "nq",
+   "k": 20,
+   "Δ (pp)": 0.4,
+   "McNemar p": 0.8145
+  },
+  {
+   "retriever": "GTR",
+   "dataset": "squad",
+   "k": 5,
+   "Δ (pp)": 7.6,
+   "McNemar p": 0.0
+  },
+  {
+   "retriever": "GTR",
+   "dataset": "squad",
+   "k": 20,
+   "Δ (pp)": 6.0,
+   "McNemar p": 0.0
+  },
+  {
+   "retriever": "SimCSE",
+   "dataset": "nq",
+   "k": 5,
+   "Δ (pp)": 16.2,
+   "McNemar p": 0.0
+  },
+  {
+   "retriever": "SimCSE",
+   "dataset": "nq",
+   "k": 20,
+   "Δ (pp)": 13.4,
+   "McNemar p": 0.0
+  },
+  {
+   "retriever": "SimCSE",
+   "dataset": "squad",
+   "k": 5,
+   "Δ (pp)": 9.8,
+   "McNemar p": 0.0
+  },
+  {
+   "retriever": "SimCSE",
+   "dataset": "squad",
+   "k": 20,
+   "Δ (pp)": 9.2,
+   "McNemar p": 0.0
+  }
+ ],
+ "table4_fid": [
+  {
+   "level_0": "SimCSE",
+   "level_1": "passage",
+   "NQ EM@top5": "27.6",
+   "NQ EM@top20": "38.0",
+   "SQUAD EM@top5": "28.2",
+   "SQUAD EM@top20": "34.6"
+  },
+  {
+   "level_0": "SimCSE",
+   "level_1": "sentence",
+   "NQ EM@top5": "34.0",
+   "NQ EM@top20": "44.0",
+   "SQUAD EM@top5": "34.6",
+   "SQUAD EM@top20": "40.2"
+  },
+  {
+   "level_0": "SimCSE",
+   "level_1": "proposition",
+   "NQ EM@top5": "36.8",
+   "NQ EM@top20": "47.4",
+   "SQUAD EM@top5": "36.0",
+   "SQUAD EM@top20": "40.8"
+  },
+  {
+   "level_0": "Contriever",
+   "level_1": "passage",
+   "NQ EM@top5": "32.8",
+   "NQ EM@top20": "47.2",
+   "SQUAD EM@top5": "41.0",
+   "SQUAD EM@top20": "48.8"
+  },
+  {
+   "level_0": "Contriever",
+   "level_1": "sentence",
+   "NQ EM@top5": "36.4",
+   "NQ EM@top20": "47.4",
+   "SQUAD EM@top5": "44.2",
+   "SQUAD EM@top20": "49.0"
+  },
+  {
+   "level_0": "Contriever",
+   "level_1": "proposition",
+   "NQ EM@top5": "38.2",
+   "NQ EM@top20": "48.8",
+   "SQUAD EM@top5": "46.4",
+   "SQUAD EM@top20": "48.4"
+  },
+  {
+   "level_0": "DPR",
+   "level_1": "passage",
+   "NQ EM@top5": "50.8",
+   "NQ EM@top20": "52.8",
+   "SQUAD EM@top5": "31.0",
+   "SQUAD EM@top20": "38.0"
+  },
+  {
+   "level_0": "DPR",
+   "level_1": "sentence",
+   "NQ EM@top5": "50.2",
+   "NQ EM@top20": "54.0",
+   "SQUAD EM@top5": "34.4",
+   "SQUAD EM@top20": "41.4"
+  },
+  {
+   "level_0": "DPR",
+   "level_1": "proposition",
+   "NQ EM@top5": "48.4",
+   "NQ EM@top20": "53.6",
+   "SQUAD EM@top5": "35.8",
+   "SQUAD EM@top20": "42.4"
+  },
+  {
+   "level_0": "GTR",
+   "level_1": "passage",
+   "NQ EM@top5": "51.0",
+   "NQ EM@top20": "53.4",
+   "SQUAD EM@top5": "43.8",
+   "SQUAD EM@top20": "46.6"
+  },
+  {
+   "level_0": "GTR",
+   "level_1": "sentence",
+   "NQ EM@top5": "51.8",
+   "NQ EM@top20": "53.6",
+   "SQUAD EM@top5": "49.2",
+   "SQUAD EM@top20": "49.4"
+  },
+  {
+   "level_0": "GTR",
+   "level_1": "proposition",
+   "NQ EM@top5": "52.2",
+   "NQ EM@top20": "53.2",
+   "SQUAD EM@top5": "50.2",
+   "SQUAD EM@top20": "50.8"
+  }
+ ],
+ "table5_llama": [
+  {
+   "level_0": "SimCSE",
+   "level_1": "passage",
+   "NQ EM@100": "31.8",
+   "NQ EM@500": "33.6",
+   "SQUAD EM@100": "20.4",
+   "SQUAD EM@500": "28.4"
+  },
+  {
+   "level_0": "SimCSE",
+   "level_1": "sentence",
+   "NQ EM@100": "33.2",
+   "NQ EM@500": "37.8",
+   "SQUAD EM@100": "26.8",
+   "SQUAD EM@500": "32.0"
+  },
+  {
+   "level_0": "SimCSE",
+   "level_1": "proposition",
+   "NQ EM@100": "37.0",
+   "NQ EM@500": "39.8",
+   "SQUAD EM@100": "28.4",
+   "SQUAD EM@500": "33.4"
+  },
+  {
+   "level_0": "Contriever",
+   "level_1": "passage",
+   "NQ EM@100": "36.4",
+   "NQ EM@500": "40.6",
+   "SQUAD EM@100": "24.2",
+   "SQUAD EM@500": "38.0"
+  },
+  {
+   "level_0": "Contriever",
+   "level_1": "sentence",
+   "NQ EM@100": "36.6",
+   "NQ EM@500": "37.0",
+   "SQUAD EM@100": "34.4",
+   "SQUAD EM@500": "36.4"
+  },
+  {
+   "level_0": "Contriever",
+   "level_1": "proposition",
+   "NQ EM@100": "36.2",
+   "NQ EM@500": "39.2",
+   "SQUAD EM@100": "35.2",
+   "SQUAD EM@500": "39.8"
+  },
+  {
+   "level_0": "DPR",
+   "level_1": "passage",
+   "NQ EM@100": "40.6",
+   "NQ EM@500": "44.8",
+   "SQUAD EM@100": "20.8",
+   "SQUAD EM@500": "30.0"
+  },
+  {
+   "level_0": "DPR",
+   "level_1": "sentence",
+   "NQ EM@100": "42.0",
+   "NQ EM@500": "46.0",
+   "SQUAD EM@100": "25.8",
+   "SQUAD EM@500": "34.0"
+  },
+  {
+   "level_0": "DPR",
+   "level_1": "proposition",
+   "NQ EM@100": "42.2",
+   "NQ EM@500": "45.4",
+   "SQUAD EM@100": "27.2",
+   "SQUAD EM@500": "31.8"
+  },
+  {
+   "level_0": "GTR",
+   "level_1": "passage",
+   "NQ EM@100": "38.8",
+   "NQ EM@500": "45.0",
+   "SQUAD EM@100": "27.6",
+   "SQUAD EM@500": "37.4"
+  },
+  {
+   "level_0": "GTR",
+   "level_1": "sentence",
+   "NQ EM@100": "42.8",
+   "NQ EM@500": "45.0",
+   "SQUAD EM@100": "38.4",
+   "SQUAD EM@500": "39.2"
+  },
+  {
+   "level_0": "GTR",
+   "level_1": "proposition",
+   "NQ EM@100": "42.0",
+   "NQ EM@500": "44.4",
+   "SQUAD EM@100": "40.2",
+   "SQUAD EM@500": "39.0"
+  },
+  {
+   "level_0": "Closed-book",
+   "level_1": "-",
+   "NQ EM@100": "25.8",
+   "NQ EM@500": "25.8",
+   "SQUAD EM@100": "14.6",
+   "SQUAD EM@500": "14.6"
+  }
+ ]
+}

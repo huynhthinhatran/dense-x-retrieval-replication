@@ -1,0 +1,17 @@
+dataset,qtype,passage,sentence,proposition,n
+nq,how,70.0,69.0,72.0,25
+nq,other,80.6,81.3,80.6,63
+nq,what,70.8,72.9,72.5,71
+nq,when,68.9,73.3,74.5,102
+nq,where,75.0,77.5,80.7,61
+nq,which,65.0,70.0,70.0,5
+nq,who,72.8,76.6,79.2,171
+nq,why,100.0,100.0,100.0,2
+squad,how,67.9,69.0,69.6,42
+squad,other,77.0,78.4,81.4,51
+squad,what,68.2,71.1,73.4,255
+squad,when,65.0,73.3,75.0,30
+squad,where,66.1,72.6,74.2,31
+squad,which,77.0,77.0,79.1,37
+squad,who,62.8,67.0,69.7,47
+squad,why,46.4,53.6,60.7,7

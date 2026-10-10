@@ -1,0 +1,1001 @@
+qid,dataset,retriever,granularity,k,pred,EM
+squad-57267947f1498d1400e8e0ee,squad,SimCSE,sentence,20,past climate,0.0
+squad-5730e936aca1c71400fe5b64,squad,SimCSE,sentence,20,one,0.0
+squad-56d99da8dc89441400fdb600,squad,SimCSE,sentence,20,Von Miller,0.0
+squad-572a1c943f37b319004786e1,squad,SimCSE,sentence,20,education,0.0
+squad-572913626aef051400154a33,squad,SimCSE,sentence,20,1789,0.0
+squad-572649d8f1498d1400e8db3a,squad,SimCSE,sentence,20,Sweden,1.0
+squad-56f8907faef23719006261b6,squad,SimCSE,sentence,20,Philip of Hesse,0.0
+squad-5728827b2ca10214002da42b,squad,SimCSE,sentence,20,paper,0.0
+squad-572ff760b2c2fd1400568679,squad,SimCSE,sentence,20,Jihad against Israel,0.0
+squad-572fe92204bcaa1900d76e98,squad,SimCSE,sentence,20,Rain,0.0
+squad-56bec0dd3aeaaa14008c935b,squad,SimCSE,sentence,20,720p,0.0
+squad-56f84485aef2371900625f72,squad,SimCSE,sentence,20,idolatry,1.0
+squad-573020f7b2c2fd14005688f7,squad,SimCSE,sentence,20,Islamic State,0.0
+squad-56dde2fa66d3e219004dad9b,squad,SimCSE,sentence,20,ivory,0.0
+squad-572834524b864d1900164718,squad,SimCSE,sentence,20,The Chase,0.0
+squad-57274e6a5951b619008f87f3,squad,SimCSE,sentence,20,ABC Television,0.0
+squad-5726c9b0dd62a815002e9047,squad,SimCSE,sentence,20,Genghis Khan,0.0
+squad-570d4606b3d812140066d61b,squad,SimCSE,sentence,20,60%,1.0
+squad-57296b151d046914007793f2,squad,SimCSE,sentence,20,lost chloroplasts,0.0
+squad-56d9ccacdc89441400fdb842,squad,SimCSE,sentence,20,Sanders,1.0
+squad-56e777e500c9c71400d77176,squad,SimCSE,sentence,20,Wales,1.0
+squad-5726a9ed5951b619008f796d,squad,SimCSE,sentence,20,several,0.0
+squad-5725f16f89a1e219009ac0cc,squad,SimCSE,sentence,20,Apollo 8,1.0
+squad-572691bedd62a815002e89dc,squad,SimCSE,sentence,20,the beroids,1.0
+squad-5726bf135951b619008f7cea,squad,SimCSE,sentence,20,west of Kashgar,1.0
+squad-56be5333acb8001400a5030b,squad,SimCSE,sentence,20,$5 million,1.0
+squad-573009a004bcaa1900d77053,squad,SimCSE,sentence,20,by the 5th century,0.0
+squad-572ff935b2c2fd140056869b,squad,SimCSE,sentence,20,Tidal,1.0
+squad-56f86966aef2371900626055,squad,SimCSE,sentence,20,German,1.0
+squad-57283b91ff5b5019007d9fa6,squad,SimCSE,sentence,20,third,1.0
+squad-56e16839cd28a01900c67887,squad,SimCSE,sentence,20,computational complexity,0.0
+squad-57115bf350c2381900b54a93,squad,SimCSE,sentence,20,Energiprojekt AB,1.0
+squad-572900f73f37b31900477f69,squad,SimCSE,sentence,20,Inflammation,1.0
+squad-5728455bff5b5019007da078,squad,SimCSE,sentence,20,CALIPSO satellite,0.0
+squad-57379a4b1c456719005744cf,squad,SimCSE,sentence,20,vengeance,0.0
+squad-5726eb4b5951b619008f826f,squad,SimCSE,sentence,20,compounding,0.0
+squad-572922206aef051400154a8d,squad,SimCSE,sentence,20,Nairobi,1.0
+squad-57275273dd62a815002e9b16,squad,SimCSE,sentence,20,Disney–ABC Domestic Television,1.0
+squad-571cca4add7acb1400e4c152,squad,SimCSE,sentence,20,oxides,0.0
+squad-57263b1638643c19005ad333,squad,SimCSE,sentence,20,packet switching,0.0
+squad-5727502f708984140094dc0a,squad,SimCSE,sentence,20,Professionals,0.0
+squad-5726d4a45951b619008f7f6a,squad,SimCSE,sentence,20,Asia,1.0
+squad-5711607f2419e314009555d0,squad,SimCSE,sentence,20,Steam engine revival,0.0
+squad-57274126dd62a815002e9a24,squad,SimCSE,sentence,20,Yuan,0.0
+squad-56beaf5e3aeaaa14008c9200,squad,SimCSE,sentence,20,Justin Timberlake,0.0
+squad-5726acc1f1498d1400e8e6ca,squad,SimCSE,sentence,20,others,0.0
+squad-5726ea985951b619008f8262,squad,SimCSE,sentence,20,nursing homes,1.0
+squad-5729f1fcaf94a219006aa6d5,squad,SimCSE,sentence,20,MHC molecules,0.0
+squad-57269424dd62a815002e8a1e,squad,SimCSE,sentence,20,the state legislature,0.0
+squad-572863c72ca10214002da2d5,squad,SimCSE,sentence,20,1158,0.0
+squad-572a07a86aef0514001551d2,squad,SimCSE,sentence,20,income,0.0
+squad-56f7c651aef2371900625bf7,squad,SimCSE,sentence,20,the Catholic Church,1.0
+squad-5726f868dd62a815002e9685,squad,SimCSE,sentence,20,patient care skills,1.0
+squad-5729a03f1d04691400779595,squad,SimCSE,sentence,20,quadratic number fields,0.0
+squad-57265ceddd62a815002e82ba,squad,SimCSE,sentence,20,List of Wheeler Dealers,0.0
+squad-57269e3bf1498d1400e8e517,squad,SimCSE,sentence,20,cannot enforce conflicting laws,0.0
+squad-57276c64f1498d1400e8f7b2,squad,SimCSE,sentence,20,231,0.0
+squad-57282f204b864d190016468e,squad,SimCSE,sentence,20,to devote production resources to the movie,0.0
+squad-57264cfa708984140094c1c6,squad,SimCSE,sentence,20,oral-aboral,0.0
+squad-5726eb4b5951b619008f826c,squad,SimCSE,sentence,20,pharmacies,0.0
+squad-5705e3f252bb89140068966a,squad,SimCSE,sentence,20,Pacific coast,0.0
+squad-5727f7523acd2414000df110,squad,SimCSE,sentence,20,Social exclusion,0.0
+squad-572f60f4947a6a140053c8ed,squad,SimCSE,sentence,20,about 300 km,0.0
+squad-5725b33f6a3fe71400b89530,squad,SimCSE,sentence,20,shock,1.0
+squad-572fdc34a23a5019007fca96,squad,SimCSE,sentence,20,Theresa May,0.0
+squad-57264a8cdd62a815002e808e,squad,SimCSE,sentence,20,The European Council,0.0
+squad-57297427af94a219006aa454,squad,SimCSE,sentence,20,After detecting stress in a cell,1.0
+squad-57291fb4af94a219006aa0b2,squad,SimCSE,sentence,20,oil exploration contract,0.0
+squad-572fb059947a6a140053cb81,squad,SimCSE,sentence,20,White Tower,0.0
+squad-57060a1175f01819005e78d4,squad,SimCSE,sentence,20,sheep,0.0
+squad-56f867e3a6d7ea1400e175d7,squad,SimCSE,sentence,20,On the Jews and their Lies,0.0
+squad-571142b3a58dae1900cd6d5b,squad,SimCSE,sentence,20,the late part,1.0
+squad-5726a9ed5951b619008f796a,squad,SimCSE,sentence,20,Temüjin,0.0
+squad-56df9ee138dc421700152108,squad,SimCSE,sentence,20,1884,1.0
+squad-56e0bab7231d4119001ac35e,squad,SimCSE,sentence,20,My Sweetheart the Drunk,0.0
+squad-56d9c5e7dc89441400fdb7dc,squad,SimCSE,sentence,20,the Eagles,0.0
+squad-57285841ff5b5019007da19b,squad,SimCSE,sentence,20,more than 140,0.0
+squad-572ffb02b2c2fd14005686b7,squad,SimCSE,sentence,20,the Upper Rhine Graben,0.0
+squad-5725c604271a42140099d188,squad,SimCSE,sentence,20,Mueller,0.0
+squad-57273f27dd62a815002e9a0c,squad,SimCSE,sentence,20,North American Industry Classification System,0.0
+squad-57300911947a6a140053cfba,squad,SimCSE,sentence,20,Hang Tuah,0.0
+squad-56f8ac579e9bad19000a02b9,squad,SimCSE,sentence,20,marry,0.0
+squad-5729f9953f37b31900478621,squad,SimCSE,sentence,20,lupus erythematosus,1.0
+squad-57296d1b1d0469140077940f,squad,SimCSE,sentence,20,homologous,1.0
+squad-57339eb9d058e614000b5efa,squad,SimCSE,sentence,20,arms,1.0
+squad-572970c11d04691400779465,squad,SimCSE,sentence,20,distribution,1.0
+squad-5725bd4b38643c19005acc33,squad,SimCSE,sentence,20,approximately one week,1.0
+squad-5711619950c2381900b54ab1,squad,SimCSE,sentence,20,half,1.0
+squad-56de49a8cffd8e1900b4b7a8,squad,SimCSE,sentence,20,Hasbro Studios,0.0
+squad-57280cac2ca10214002d9cab,squad,SimCSE,sentence,20,The Doctor,0.0
+squad-5729ef266aef05140015511f,squad,SimCSE,sentence,20,Michael Heckenberger,1.0
+squad-572872822ca10214002da376,squad,SimCSE,sentence,20,the Mongol Empire,0.0
+squad-56f8bd509b226e1400dd0eed,squad,SimCSE,sentence,20,state of mind,0.0
+squad-571c879bdd7acb1400e4c0f0,squad,SimCSE,sentence,20,antibonding,1.0
+squad-5726c4c8708984140094d0f6,squad,SimCSE,sentence,20,Arran,0.0
+squad-57273dccdd62a815002e99fc,squad,SimCSE,sentence,20,gedei Khan,0.0
+squad-573380e0d058e614000b5be9,squad,SimCSE,sentence,20,commune,1.0
+squad-572966ebaf94a219006aa392,squad,SimCSE,sentence,20,red algal derived,0.0
+squad-572fe4a304bcaa1900d76e58,squad,SimCSE,sentence,20,the Alpine Rhine,0.0
+squad-5726509bdd62a815002e815c,squad,SimCSE,sentence,20,The Unconquered,0.0
+squad-5725d52f89a1e219009abf79,squad,SimCSE,sentence,20,constant bit rate,0.0
+squad-57287e512ca10214002da3fa,squad,SimCSE,sentence,20,generally converse well,0.0
+squad-56de10b44396321400ee2593,squad,SimCSE,sentence,20,Trim Castle,0.0
+squad-572fd7b8947a6a140053cd3b,squad,SimCSE,sentence,20,Thursday,1.0
+squad-571c83f3dd7acb1400e4c0db,squad,SimCSE,sentence,20,a covalent double bond,1.0
+squad-57283f014b864d19001647e8,squad,SimCSE,sentence,20,Baptist educators,0.0
+squad-572691bedd62a815002e89df,squad,SimCSE,sentence,20,Richard Harbison,1.0
+squad-56e11996e3433e1400422be1,squad,SimCSE,sentence,20,in patent archives,0.0
+squad-5705e33f52bb891400689650,squad,SimCSE,sentence,20,Southern California,0.0
+squad-5728f9cf4b864d1900165169,squad,SimCSE,sentence,20,between June and September,1.0
+squad-57275573708984140094dc46,squad,SimCSE,sentence,20,Extreme Makeover: Home Edition,1.0
+squad-57295a116aef051400154d47,squad,SimCSE,sentence,20,more sunlight,0.0
+squad-56d9b4ebdc89441400fdb70a,squad,SimCSE,sentence,20,SAP Center in San Jose,1.0
+squad-5730d3adaca1c71400fe5af7,squad,SimCSE,sentence,20,the bishop has read the appointments,0.0
+squad-572fcb6da23a5019007fc9f1,squad,SimCSE,sentence,20,Schedule 5,1.0
+squad-56d9a637dc89441400fdb69a,squad,SimCSE,sentence,20,black,1.0
+squad-57286dfa2ca10214002da335,squad,SimCSE,sentence,20,Annam,0.0
+squad-5726f90b708984140094d75e,squad,SimCSE,sentence,20,2012,0.0
+squad-57300a25a23a5019007fcc98,squad,SimCSE,sentence,20,"Establishing ""natural borders""",1.0
+squad-56d9a6b4dc89441400fdb6a1,squad,SimCSE,sentence,20,San Jose Marriott,1.0
+squad-56d997cddc89441400fdb58a,squad,SimCSE,sentence,20,39,1.0
+squad-570d26efb3d812140066d491,squad,SimCSE,sentence,20,at Least one,0.0
+squad-57280cac2ca10214002d9cac,squad,SimCSE,sentence,20,2013,0.0
+squad-56d9b389dc89441400fdb6ec,squad,SimCSE,sentence,20,the annual March Madness tournament,0.0
+squad-572702a3dd62a815002e9793,squad,SimCSE,sentence,20,Henry Moore,0.0
+squad-57339dd94776f41900660ecf,squad,SimCSE,sentence,20,when they would be married,1.0
+squad-57273b69dd62a815002e99d7,squad,SimCSE,sentence,20,CBS,0.0
+squad-56e1efa0e3433e140042321d,squad,SimCSE,sentence,20,not equal to NP,0.0
+squad-5733f5264776f419006615a6,squad,SimCSE,sentence,20,prototype for confederation,1.0
+squad-573085ea8ab72b1400f9c550,squad,SimCSE,sentence,20,to create an empire,0.0
+squad-56d71fc00d65d21400198386,squad,SimCSE,sentence,20,ESPN,0.0
+squad-572fc659b2c2fd1400568447,squad,SimCSE,sentence,20,Immediately after Decision Time,1.0
+squad-56e75a9037bdd419002c3eca,squad,SimCSE,sentence,20,do work,0.0
+squad-5727623a5951b619008f8922,squad,SimCSE,sentence,20,Capital Cities Communications,0.0
+squad-57264684708984140094c123,squad,SimCSE,sentence,20,Central Asia,1.0
+squad-571cd11add7acb1400e4c171,squad,SimCSE,sentence,20,aerobic,1.0
+squad-5730e9f4aca1c71400fe5b74,squad,SimCSE,sentence,20,observer,1.0
+squad-56e108abe3433e1400422b0c,squad,SimCSE,sentence,20,The Century,0.0
+squad-56e124f1cd28a01900c67650,squad,SimCSE,sentence,20,fanaticism,1.0
+squad-56e057e1231d4119001ac045,squad,SimCSE,sentence,20,1887,0.0
+squad-57268a37f1498d1400e8e340,squad,SimCSE,sentence,20,ctenophores,1.0
+squad-56e19724cd28a01900c679f9,squad,SimCSE,sentence,20,the integer factorization problem,1.0
+squad-5725f00938643c19005acedb,squad,SimCSE,sentence,20,The Corner,0.0
+squad-56e74faf00c9c71400d76f96,squad,SimCSE,sentence,20,the teachers' college,0.0
+squad-57377ec7c3c5551400e51f07,squad,SimCSE,sentence,20,momentum,0.0
+squad-5728455bff5b5019007da079,squad,SimCSE,sentence,20,182 million tons,1.0
+squad-57376df3c3c5551400e51ed7,squad,SimCSE,sentence,20,static friction,1.0
+squad-56e10c61e3433e1400422b37,squad,SimCSE,sentence,20,"a $15,000-a-year guaranteed royalty",0.0
+squad-57377862c3c5551400e51ef3,squad,SimCSE,sentence,20,dynamic equilibrium,1.0
+squad-572fc78d04bcaa1900d76d09,squad,SimCSE,sentence,20,their functions,1.0
+squad-56dddf4066d3e219004dad5f,squad,SimCSE,sentence,20,William the Conqueror,1.0
+squad-57267383dd62a815002e8554,squad,SimCSE,sentence,20,"a long, dark shadow",0.0
+squad-56e0ef0c231d4119001ac464,squad,SimCSE,sentence,20,"$216,000",1.0
+squad-56bf3e803aeaaa14008c9589,squad,SimCSE,sentence,20,Running Back,0.0
+squad-573784fa1c45671900574483,squad,SimCSE,sentence,20,Newton,0.0
+squad-5705f7c875f01819005e77dc,squad,SimCSE,sentence,20,third most populated,0.0
+squad-5730b541396df919000962c5,squad,SimCSE,sentence,20,free trade,1.0
+squad-57273e50dd62a815002e9a03,squad,SimCSE,sentence,20,Engineering News-Record,0.0
+squad-5725f190ec44d21400f3d772,squad,SimCSE,sentence,20,Timna Valley,0.0
+squad-5726de7a5951b619008f80af,squad,SimCSE,sentence,20,René Lalique,1.0
+squad-56f86966aef2371900626057,squad,SimCSE,sentence,20,with the Father,1.0
+squad-5729ffda1d046914007796b0,squad,SimCSE,sentence,20,immunization,1.0
+squad-56f86e91aef2371900626067,squad,SimCSE,sentence,20,German-language publications,1.0
+squad-56bebb293aeaaa14008c9305,squad,SimCSE,sentence,20,San Jose,1.0
+squad-573368044776f41900660a2b,squad,SimCSE,sentence,20,"Freiston, Brooklyn, New York",0.0
+squad-56e181d9e3433e1400422fa1,squad,SimCSE,sentence,20,the binary alphabet,1.0
+squad-5729f2646aef051400155132,squad,SimCSE,sentence,20,"about 90,790 tonnes",0.0
+squad-5725bc7138643c19005acc20,squad,SimCSE,sentence,20,refusing to make a commitment,1.0
+squad-572826762ca10214002d9f2e,squad,SimCSE,sentence,20,List of Neighbours,0.0
+squad-571ce7f25efbb31900334e3f,squad,SimCSE,sentence,20,Earth's crust,1.0
+squad-572657d9dd62a815002e8231,squad,SimCSE,sentence,20,metamorphic,1.0
+squad-57338160d058e614000b5bfa,squad,SimCSE,sentence,20,60,1.0
+squad-5733ef47d058e614000b662c,squad,SimCSE,sentence,20,Major George Washington,1.0
+squad-57308f6b8ab72b1400f9c580,squad,SimCSE,sentence,20,romanticized vision,0.0
+squad-57268f05dd62a815002e8993,squad,SimCSE,sentence,20,Conilithes,0.0
+squad-56e10e73cd28a01900c674eb,squad,SimCSE,sentence,20,death ray,0.0
+squad-5705fd8475f01819005e7844,squad,SimCSE,sentence,20,Fold mountains,0.0
+squad-56e11d8ecd28a01900c675f3,squad,SimCSE,sentence,20,Graz,1.0
+squad-573784fa1c45671900574487,squad,SimCSE,sentence,20,force of gravity,1.0
+squad-56f88c37aef2371900626178,squad,SimCSE,sentence,20,doctrinal unity,1.0
+squad-5726431aec44d21400f3dd17,squad,SimCSE,sentence,20,connect to parts of the Internet,0.0
+squad-572745c6708984140094db9c,squad,SimCSE,sentence,20,the store,0.0
+squad-57269cc3dd62a815002e8b12,squad,SimCSE,sentence,20,common morality,0.0
+squad-572a0f073f37b31900478682,squad,SimCSE,sentence,20,melanomas,1.0
+squad-572989846aef051400154fc2,squad,SimCSE,sentence,20,Dirichlet's theorem,0.0
+squad-5726bcde708984140094cfc0,squad,SimCSE,sentence,20,employment,0.0
+squad-56ddde6b9a695914005b962c,squad,SimCSE,sentence,20,10th,1.0
+squad-57267947f1498d1400e8e0ef,squad,SimCSE,sentence,20,laboratory,1.0
+squad-5705f7c875f01819005e77dd,squad,SimCSE,sentence,20,vast areas,1.0
+squad-5726bd655951b619008f7ca2,squad,SimCSE,sentence,20,Jebe,1.0
+squad-57277de9dd62a815002e9ea4,squad,SimCSE,sentence,20,WWSB,0.0
+squad-57265526708984140094c2bd,squad,SimCSE,sentence,20,Iraq,0.0
+squad-56d9943fdc89441400fdb576,squad,SimCSE,sentence,20,Golden State Warriors,0.0
+squad-57281f203acd2414000df4f6,squad,SimCSE,sentence,20,The New Blank,0.0
+squad-57340111d058e614000b677e,squad,SimCSE,sentence,20,a poor harvest,1.0
+squad-5726847f708984140094c8ac,squad,SimCSE,sentence,20,1971,1.0
+squad-57115ff82419e314009555c5,squad,SimCSE,sentence,20,a pair,0.0
+squad-56e11cedcd28a01900c675e9,squad,SimCSE,sentence,20,picture thinking,1.0
+squad-56e11044e3433e1400422b77,squad,SimCSE,sentence,20,his home,0.0
+squad-57284618ff5b5019007da0aa,squad,SimCSE,sentence,20,after their second year,1.0
+squad-57112686b654c5140001fbd7,squad,SimCSE,sentence,20,internal combustion,0.0
+squad-5726ae32708984140094cdac,squad,SimCSE,sentence,20,wealth from future war spoils,0.0
+squad-57338007d058e614000b5bde,squad,SimCSE,sentence,20,1944,1.0
+squad-56e127bccd28a01900c6765b,squad,SimCSE,sentence,20,Time,1.0
+squad-5729e1101d04691400779643,squad,SimCSE,sentence,20,much lower wages,0.0
+squad-572810ec2ca10214002d9d08,squad,SimCSE,sentence,20,the use of the ford,0.0
+squad-57291f153f37b31900478045,squad,SimCSE,sentence,20,Exploration,1.0
+squad-5729f3831d0469140077967f,squad,SimCSE,sentence,20,Vampire bats,1.0
+squad-572804522ca10214002d9b96,squad,SimCSE,sentence,20,TV,0.0
+squad-57269120708984140094ca5a,squad,SimCSE,sentence,20,cycling,1.0
+squad-5727cebc2ca10214002d96f3,squad,SimCSE,sentence,20,1890,0.0
+squad-572867d72ca10214002da300,squad,SimCSE,sentence,20,In summer 887,0.0
+squad-5726bb645951b619008f7c3c,squad,SimCSE,sentence,20,Ming'an,0.0
+squad-57268b43dd62a815002e88f2,squad,SimCSE,sentence,20,European Parliament,0.0
+squad-56e1ee4de3433e1400423210,squad,SimCSE,sentence,20,unequal,1.0
+squad-56e1a38de3433e140042305f,squad,SimCSE,sentence,20,bits,1.0
+squad-5727f2714b864d1900164073,squad,SimCSE,sentence,20,educational inflation,0.0
+squad-56f87392aef237190062609d,squad,SimCSE,sentence,20,perceived difficulty of its tune,1.0
+squad-57295a116aef051400154d46,squad,SimCSE,sentence,20,phycoerythrin,0.0
+squad-56e77cee00c9c71400d771a9,squad,SimCSE,sentence,20,low,0.0
+squad-56e1dc62cd28a01900c67bca,squad,SimCSE,sentence,20,P,1.0
+squad-572faf74b2c2fd140056834b,squad,SimCSE,sentence,20,University of Aberdeen,1.0
+squad-570607f575f01819005e78b8,squad,SimCSE,sentence,20,Riverside,1.0
+squad-57275cb3f1498d1400e8f6dd,squad,SimCSE,sentence,20,0.9,0.0
+squad-56e0dbb57aa994140058e77d,squad,SimCSE,sentence,20,Westinghouse Electric & Manufacturing Company,1.0
+squad-5726eb8bf1498d1400e8efe3,squad,SimCSE,sentence,20,recurring and life-threatening infections,0.0
+squad-570d4606b3d812140066d61d,squad,SimCSE,sentence,20,Asia,1.0
+squad-5725c63438643c19005acca1,squad,SimCSE,sentence,20,"1,600",1.0
+squad-571156152419e3140095559d,squad,SimCSE,sentence,20,94 pounds,1.0
+squad-57298ef11d0469140077952d,squad,SimCSE,sentence,20,1905,0.0
+squad-572685d1f1498d1400e8e2a2,squad,SimCSE,sentence,20,2005,0.0
+squad-570607f575f01819005e78b6,squad,SimCSE,sentence,20,12,0.0
+squad-572ff12e04bcaa1900d76f03,squad,SimCSE,sentence,20,the Romantic Rhine,1.0
+squad-570d29c2b3d812140066d4be,squad,SimCSE,sentence,20,23.2%,0.0
+squad-5728349dff5b5019007d9eff,squad,SimCSE,sentence,20,Brazil,0.0
+squad-5726d9935951b619008f7ff0,squad,SimCSE,sentence,20,regulatory agencies,0.0
+squad-56d703d10d65d214001982d7,squad,SimCSE,sentence,20,arm,0.0
+squad-57286ead2ca10214002da347,squad,SimCSE,sentence,20,Zhenjin,1.0
+squad-57113c6da58dae1900cd6d32,squad,SimCSE,sentence,20,first century AD,1.0
+squad-5728e5224b864d1900165036,squad,SimCSE,sentence,20,"individual ""tree-sitters""",0.0
+squad-56dfaa047aa994140058dfc0,squad,SimCSE,sentence,20,stroke,1.0
+squad-5729e1101d04691400779645,squad,SimCSE,sentence,20,education,1.0
+squad-572feddda23a5019007fcb5b,squad,SimCSE,sentence,20,The Upper Rhine region,1.0
+squad-5726b879708984140094cf04,squad,SimCSE,sentence,20,nomads,0.0
+squad-5728eef92ca10214002daab3,squad,SimCSE,sentence,20,guilty,0.0
+squad-57266193dd62a815002e832a,squad,SimCSE,sentence,20,seismic,1.0
+squad-572a1dbb3f37b319004786f7,squad,SimCSE,sentence,20,Economic inequality,0.0
+squad-56e0d54a7aa994140058e76b,squad,SimCSE,sentence,20,1884,1.0
+squad-5727448b5951b619008f87a1,squad,SimCSE,sentence,20,College GameDay,0.0
+squad-572881704b864d1900164a51,squad,SimCSE,sentence,20,inherited from the Jin dynasty,1.0
+squad-5730b10b8ab72b1400f9c69f,squad,SimCSE,sentence,20,2016,0.0
+squad-572927d06aef051400154ade,squad,SimCSE,sentence,20,Minister for Libraries,0.0
+squad-5733d7cbd058e614000b63ad,squad,SimCSE,sentence,20,upstate New York,0.0
+squad-56e190bce3433e1400422fca,squad,SimCSE,sentence,20,1 or 0,1.0
+squad-57270676dd62a815002e97f0,squad,SimCSE,sentence,20,late 14th-century,1.0
+squad-573003dd947a6a140053cf44,squad,SimCSE,sentence,20,About 11000 years ago,0.0
+squad-57339c16d058e614000b5ec6,squad,SimCSE,sentence,20,Derkachi,0.0
+squad-56e765ba00c9c71400d770a2,squad,SimCSE,sentence,20,Enthusiastic,0.0
+squad-57114b1a2419e31400955577,squad,SimCSE,sentence,20,ships,0.0
+squad-572812142ca10214002d9d2a,squad,SimCSE,sentence,20,Russell T Davies,1.0
+squad-5726a299dd62a815002e8b9e,squad,SimCSE,sentence,20,two,0.0
+squad-572926086aef051400154ac5,squad,SimCSE,sentence,20,October 2002,0.0
+squad-5733ef47d058e614000b662e,squad,SimCSE,sentence,20,December 12,1.0
+squad-573011de04bcaa1900d770f9,squad,SimCSE,sentence,20,Qutb,1.0
+squad-572978e66aef051400154f77,squad,SimCSE,sentence,20,green light,1.0
+squad-57264cc6dd62a815002e80e4,squad,SimCSE,sentence,20,Cardinal Francis Aidan Gasquet,0.0
+squad-570603c475f01819005e7882,squad,SimCSE,sentence,20,2010,1.0
+squad-573005b9947a6a140053cf6e,squad,SimCSE,sentence,20,Islamist movements,0.0
+squad-572818f54b864d190016446d,squad,SimCSE,sentence,20,covert lawbreaking,1.0
+squad-5733a560d058e614000b5f78,squad,SimCSE,sentence,20,the wilderness,0.0
+squad-572753335951b619008f8854,squad,SimCSE,sentence,20,"the architect, engineer or builder",0.0
+squad-5730126ba23a5019007fcd0a,squad,SimCSE,sentence,20,1981,1.0
+squad-5726f1ec708984140094d6aa,squad,SimCSE,sentence,20,"over 5,100",1.0
+squad-57281bb84b864d190016449c,squad,SimCSE,sentence,20,annexation,0.0
+squad-5725c6dcec44d21400f3d532,squad,SimCSE,sentence,20,Golovin,1.0
+squad-5732b6b5328d981900602022,squad,SimCSE,sentence,20,Vistula River,1.0
+squad-5727c94bff5b5019007d954b,squad,SimCSE,sentence,20,"821,784",0.0
+squad-56d7251d0d65d214001983cd,squad,SimCSE,sentence,20,Wilt Chamberlain,0.0
+squad-572741aaf1498d1400e8f53f,squad,SimCSE,sentence,20,$1 billion,0.0
+squad-5730a97a396df9190009625a,squad,SimCSE,sentence,20,"April 23, 1968",1.0
+squad-57286fa83acd2414000df9e6,squad,SimCSE,sentence,20,1620,0.0
+squad-572749d7dd62a815002e9a90,squad,SimCSE,sentence,20,Robert E. Howard,0.0
+squad-56e76de800c9c71400d77123,squad,SimCSE,sentence,20,three,1.0
+squad-56e0dbb57aa994140058e77a,squad,SimCSE,sentence,20,Westinghouse Electric,0.0
+squad-57284142ff5b5019007da00c,squad,SimCSE,sentence,20,Old Main Building,0.0
+squad-572689385951b619008f761c,squad,SimCSE,sentence,20,59,0.0
+squad-56d722330d65d214001983a7,squad,SimCSE,sentence,20,Quickbooks,0.0
+squad-57265d08708984140094c39b,squad,SimCSE,sentence,20,the 1980s,0.0
+squad-5728661e2ca10214002da2e8,squad,SimCSE,sentence,20,Chinese,0.0
+squad-56d721af0d65d2140019839e,squad,SimCSE,sentence,20,The Pokémon Company,1.0
+squad-572a142e3f37b319004786bb,squad,SimCSE,sentence,20,a rapid killing response,0.0
+squad-572647e2dd62a815002e805c,squad,SimCSE,sentence,20,"a program of coordinated, evolving projects",0.0
+squad-57115b2850c2381900b54a80,squad,SimCSE,sentence,20,a water pump,1.0
+squad-572920d73f37b31900478056,squad,SimCSE,sentence,20,30%,1.0
+squad-57306797396df919000960f1,squad,SimCSE,sentence,20,formal,1.0
+squad-56bec1823aeaaa14008c9362,squad,SimCSE,sentence,20,Samm Hodges,0.0
+squad-572a142e3f37b319004786bc,squad,SimCSE,sentence,20,immune response,0.0
+squad-572920d73f37b31900478057,squad,SimCSE,sentence,20,9–18,1.0
+squad-5726a8d4dd62a815002e8c38,squad,SimCSE,sentence,20,Year 5,0.0
+squad-57297781af94a219006aa4a3,squad,SimCSE,sentence,20,Wilson's theorem,0.0
+squad-5726559edd62a815002e81c8,squad,SimCSE,sentence,20,extrapolate,0.0
+squad-56d6f2000d65d2140019827d,squad,SimCSE,sentence,20,Jonathan Stewart,0.0
+squad-5726642f5951b619008f7157,squad,SimCSE,sentence,20,16,0.0
+squad-5728f9882ca10214002dab5d,squad,SimCSE,sentence,20,non-specific,1.0
+squad-5726ef73f1498d1400e8f062,squad,SimCSE,sentence,20,cannabis,0.0
+squad-571153422419e31400955580,squad,SimCSE,sentence,20,Middleton Railway,1.0
+squad-572fb059947a6a140053cb83,squad,SimCSE,sentence,20,the River Tay,0.0
+squad-57379ed81c456719005744d9,squad,SimCSE,sentence,20,string,0.0
+squad-57335c20d058e614000b58fd,squad,SimCSE,sentence,20,Warsaw Escarpment,1.0
+squad-5733638fd058e614000b59ea,squad,SimCSE,sentence,20,socialist realist,0.0
+squad-572970c11d04691400779467,squad,SimCSE,sentence,20,1896,0.0
+squad-57264cac708984140094c1b5,squad,SimCSE,sentence,20,creating greater scarcity,0.0
+squad-57377c98c3c5551400e51efc,squad,SimCSE,sentence,20,Pauli exclusion principle,0.0
+squad-570d47b8b3d812140066d630,squad,SimCSE,sentence,20,mountainous areas,1.0
+squad-56f8c7029e9bad19000a04a2,squad,SimCSE,sentence,20,late 1545,1.0
+squad-5726c19add62a815002e8f8b,squad,SimCSE,sentence,20,shipping toxic waste,1.0
+squad-5725d34089a1e219009abf50,squad,SimCSE,sentence,20,a new concept in agri-tourism,0.0
+squad-57332442d058e614000b5723,squad,SimCSE,sentence,20,village,1.0
+squad-572fe1d404bcaa1900d76e3a,squad,SimCSE,sentence,20,Austrian,0.0
+squad-5726b2fcf1498d1400e8e7e5,squad,SimCSE,sentence,20,Royal Institute of British Architects,1.0
+squad-572963221d04691400779389,squad,SimCSE,sentence,20,stacks of three,0.0
+squad-56f867e3a6d7ea1400e175d8,squad,SimCSE,sentence,20,extreme change,0.0
+squad-57115dbe2419e314009555a6,squad,SimCSE,sentence,20,Mike Watt,0.0
+squad-572658daf1498d1400e8dcaf,squad,SimCSE,sentence,20,three,1.0
+squad-572ffd75b2c2fd14005686e7,squad,SimCSE,sentence,20,roughly west,0.0
+squad-56e7796637bdd419002c4000,squad,SimCSE,sentence,20,charter schools,1.0
+squad-5726c80c5951b619008f7de7,squad,SimCSE,sentence,20,14th to the 19th century,1.0
+squad-56f826a7a6d7ea1400e17429,squad,SimCSE,sentence,20,intuitive validity,0.0
+squad-572fc78d04bcaa1900d76d08,squad,SimCSE,sentence,20,the balance of parties,1.0
+squad-5727f0b1ff5b5019007d98f3,squad,SimCSE,sentence,20,BBC Wales,0.0
+squad-5726472bdd62a815002e8044,squad,SimCSE,sentence,20,Sublink Network,0.0
+squad-572a0b101d046914007796ed,squad,SimCSE,sentence,20,desert,1.0
+squad-5727ec062ca10214002d99b7,squad,SimCSE,sentence,20,European Union law,0.0
+squad-56bec0353aeaaa14008c934f,squad,SimCSE,sentence,20,33 lb,0.0
+squad-5729f60caf94a219006aa6f3,squad,SimCSE,sentence,20,growing gaps,0.0
+squad-572f59b4a23a5019007fc587,squad,SimCSE,sentence,20,greater density of cold water,1.0
+squad-56e10b6ee3433e1400422b26,squad,SimCSE,sentence,20,"less than $1,000",1.0
+squad-57271f125951b619008f8635,squad,SimCSE,sentence,20,Antigone,1.0
+squad-57300f8504bcaa1900d770d4,squad,SimCSE,sentence,20,Qing dynasty,0.0
+squad-572809ab4b864d19001642b2,squad,SimCSE,sentence,20,the Eleventh Doctor,0.0
+squad-5730040f947a6a140053cf50,squad,SimCSE,sentence,20,Gamal Abdul Nasser,1.0
+squad-5728facd4b864d1900165171,squad,SimCSE,sentence,20,avoid imprisonment or a fine,0.0
+squad-57287e512ca10214002da3fb,squad,SimCSE,sentence,20,Genghis Khan,0.0
+squad-56e749dd00c9c71400d76f52,squad,SimCSE,sentence,20,homeschooling,0.0
+squad-572976791d046914007794b3,squad,SimCSE,sentence,20,chloroplast dimorphism,0.0
+squad-57340549d058e614000b67df,squad,SimCSE,sentence,20,Lagos,0.0
+squad-57281940ff5b5019007d9d45,squad,SimCSE,sentence,20,Horror,0.0
+squad-572fc80b04bcaa1900d76d11,squad,SimCSE,sentence,20,beginning of each parliamentary session,1.0
+squad-57308cf88ab72b1400f9c578,squad,SimCSE,sentence,20,Orientalism,1.0
+squad-5726baf2dd62a815002e8e77,squad,SimCSE,sentence,20,Steymann v Staatssecretaris van Justitie,1.0
+squad-56de4c324396321400ee27ab,squad,SimCSE,sentence,20,embroidery,1.0
+squad-572ff430a23a5019007fcbac,squad,SimCSE,sentence,20,Old Rhine Bridge,0.0
+squad-56e124f1cd28a01900c6764f,squad,SimCSE,sentence,20,Orthodox Christian,1.0
+squad-571cd703dd7acb1400e4c184,squad,SimCSE,sentence,20,quartz,0.0
+squad-572a0ecb1d04691400779717,squad,SimCSE,sentence,20,Architects,0.0
+squad-5730b1022461fd1900a9cfa6,squad,SimCSE,sentence,20,Korea,0.0
+squad-5730005db2c2fd1400568706,squad,SimCSE,sentence,20,the United States,0.0
+squad-56f827caa6d7ea1400e1743b,squad,SimCSE,sentence,20,The emperor,1.0
+squad-5726de7a5951b619008f80ad,squad,SimCSE,sentence,20,Ancient Egypt,1.0
+squad-57273cca708984140094db34,squad,SimCSE,sentence,20,one business,0.0
+squad-572826634b864d19001645be,squad,SimCSE,sentence,20,Arab,1.0
+squad-56e7586d37bdd419002c3eb7,squad,SimCSE,sentence,20,physical pain,1.0
+squad-570d32e4fed7b91900d45d05,squad,SimCSE,sentence,20,curriculum standards,1.0
+squad-56e0d6367aa994140058e774,squad,SimCSE,sentence,20,American humor,1.0
+squad-56e1bd4acd28a01900c67afd,squad,SimCSE,sentence,20,the identity of the ovuline,0.0
+squad-572a06866aef0514001551bf,squad,SimCSE,sentence,20,higher,1.0
+squad-572759c1f1498d1400e8f6cc,squad,SimCSE,sentence,20,The Amazing Spider-Man,0.0
+squad-570d529fb3d812140066d6bb,squad,SimCSE,sentence,20,tourism,1.0
+squad-5730040f947a6a140053cf4c,squad,SimCSE,sentence,20,Civil disobedience,0.0
+squad-56dde27d9a695914005b9652,squad,SimCSE,sentence,20,the early medieval Duchy of Normandy,0.0
+squad-57378e311c456719005744b0,squad,SimCSE,sentence,20,1864,1.0
+squad-5726509bdd62a815002e815d,squad,SimCSE,sentence,20,The New York Review of Books,0.0
+squad-5726a46cdd62a815002e8bd3,squad,SimCSE,sentence,20,19th century,0.0
+squad-572691bedd62a815002e89de,squad,SimCSE,sentence,20,66 million years ago,0.0
+squad-57296cb21d04691400779404,squad,SimCSE,sentence,20,10 to 100,0.0
+squad-5726ab47f1498d1400e8e6a2,squad,SimCSE,sentence,20,a number,0.0
+squad-5726542ff1498d1400e8dc2a,squad,SimCSE,sentence,20,approaching death,0.0
+squad-57297547af94a219006aa45f,squad,SimCSE,sentence,20,Prime number,0.0
+squad-572748745951b619008f87b2,squad,SimCSE,sentence,20,Bob Iger,0.0
+squad-5727e21e4b864d1900163f34,squad,SimCSE,sentence,20,John A. Adams,0.0
+squad-57268d02f1498d1400e8e37b,squad,SimCSE,sentence,20,late-night openings,0.0
+squad-56e0e69b7aa994140058e795,squad,SimCSE,sentence,20,Tesla,0.0
+squad-57290d811d04691400778fd1,squad,SimCSE,sentence,20,the conflict between science and religion,0.0
+squad-5730c737b54a4f140068cc53,squad,SimCSE,sentence,20,the General Conference,1.0
+squad-56e1c9bfe3433e1400423193,squad,SimCSE,sentence,20,another problem,1.0
+squad-572883a33acd2414000dfa7a,squad,SimCSE,sentence,20,Hans,0.0
+squad-57277585708984140094de2d,squad,SimCSE,sentence,20,CBS,0.0
+squad-5726542ff1498d1400e8dc2b,squad,SimCSE,sentence,20,as much as 50%,1.0
+squad-57268525dd62a815002e8807,squad,SimCSE,sentence,20,the Astrodome,0.0
+squad-5725b888ec44d21400f3d455,squad,SimCSE,sentence,20,Abe Silverstein,1.0
+squad-573749741c4567190057445e,squad,SimCSE,sentence,20,axial tilt,0.0
+squad-573093598ab72b1400f9c5af,squad,SimCSE,sentence,20,Soft Power,1.0
+squad-5727ef664b864d1900164061,squad,SimCSE,sentence,20,top tax rate,1.0
+squad-5725eb8a38643c19005ace81,squad,SimCSE,sentence,20,materials melted near an impact crater,1.0
+squad-56bebd713aeaaa14008c9331,squad,SimCSE,sentence,20,week-long,0.0
+squad-5728659f4b864d190016498c,squad,SimCSE,sentence,20,Augusta National,0.0
+squad-5729293d3f37b319004780a3,squad,SimCSE,sentence,20,5 May,0.0
+squad-56bf3a223aeaaa14008c9575,squad,SimCSE,sentence,20,knee ligament injury,0.0
+squad-56e10ddce3433e1400422b49,squad,SimCSE,sentence,20,doctor,1.0
+squad-572fdbb004bcaa1900d76ddd,squad,SimCSE,sentence,20,Devolution,0.0
+squad-57275250708984140094dc29,squad,SimCSE,sentence,20,Grandson,1.0
+squad-56f84760aef2371900625f83,squad,SimCSE,sentence,20,not result in noticeable improvements in economic performance,0.0
+squad-571cc3dedd7acb1400e4c147,squad,SimCSE,sentence,20,oxygen,1.0
+squad-57263eaa38643c19005ad373,squad,SimCSE,sentence,20,nutritive cells,0.0
+squad-573383d0d058e614000b5c39,squad,SimCSE,sentence,20,the Argentinean automaker Fisker,0.0
+squad-572fd47fa23a5019007fca59,squad,SimCSE,sentence,20,the Sovereign,1.0
+squad-5726b879708984140094cf02,squad,SimCSE,sentence,20,Qara Khitai,0.0
+squad-56beb7fd3aeaaa14008c92b6,squad,SimCSE,sentence,20,arm,0.0
+squad-57297d421d046914007794e5,squad,SimCSE,sentence,20,One,0.0
+squad-56f851b1a6d7ea1400e1755f,squad,SimCSE,sentence,20,1812,0.0
+squad-57293d116aef051400154bc8,squad,SimCSE,sentence,20,conduct original research,0.0
+squad-57339902d058e614000b5e70,squad,SimCSE,sentence,20,1858,0.0
+squad-56d6017d1c85041400946ec2,squad,SimCSE,sentence,20,Philadelphia Eagles,0.0
+squad-57270ab9708984140094d8fb,squad,SimCSE,sentence,20,preventive,1.0
+squad-5737958ac3c5551400e51f2b,squad,SimCSE,sentence,20,negatively charged,0.0
+squad-56e07c86231d4119001ac1d1,squad,SimCSE,sentence,20,wireless lighting system,0.0
+squad-572fc659b2c2fd1400568448,squad,SimCSE,sentence,20,one hour,0.0
+squad-5725b41838643c19005acb80,squad,SimCSE,sentence,20,The Apollo program,1.0
+squad-5727705f5951b619008f89f3,squad,SimCSE,sentence,20,The American Film Festival,0.0
+squad-5729fd56af94a219006aa731,squad,SimCSE,sentence,20,slash and burn,1.0
+squad-5729e1e36aef0514001550bc,squad,SimCSE,sentence,20,higher top marginal tax rates,0.0
+squad-56f8c9719e9bad19000a04e0,squad,SimCSE,sentence,20,cancer,0.0
+squad-5727f05b4b864d1900164068,squad,SimCSE,sentence,20,Techsourcing,0.0
+squad-56bf41013aeaaa14008c959b,squad,SimCSE,sentence,20,Manning,1.0
+squad-5725d662ec44d21400f3d68b,squad,SimCSE,sentence,20,Kearney Park,1.0
+squad-573735e8c3c5551400e51e73,squad,SimCSE,sentence,20,Euclid,0.0
+squad-56e1097dcd28a01900c67490,squad,SimCSE,sentence,20,Oh Hyun-Min,0.0
+squad-56d9cd9adc89441400fdb84d,squad,SimCSE,sentence,20,11,1.0
+squad-57264f18f1498d1400e8dbaf,squad,SimCSE,sentence,20,Y. pestis,1.0
+squad-572a03086aef0514001551a3,squad,SimCSE,sentence,20,cytotoxic or immunosuppressive drugs,1.0
+squad-57264b3edd62a815002e80ad,squad,SimCSE,sentence,20,the bad air theory,0.0
+squad-5726bb645951b619008f7c3b,squad,SimCSE,sentence,20,Jin,0.0
+squad-5729e500af94a219006aa6b8,squad,SimCSE,sentence,20,the last glacial maximum,1.0
+squad-56d6fea90d65d214001982b2,squad,SimCSE,sentence,20,2,0.0
+squad-572976183f37b31900478435,squad,SimCSE,sentence,20,low photosynthesis rates,0.0
+squad-571c9074dd7acb1400e4c104,squad,SimCSE,sentence,20,UVB,0.0
+squad-57060cc352bb89140068980e,squad,SimCSE,sentence,20,Central business districts,0.0
+squad-5727678e5951b619008f8976,squad,SimCSE,sentence,20,Good Morning America,0.0
+squad-570d529fb3d812140066d6bc,squad,SimCSE,sentence,20,sports,1.0
+squad-56d9cb47dc89441400fdb833,squad,SimCSE,sentence,20,Ware,0.0
+squad-57284456ff5b5019007da05d,squad,SimCSE,sentence,20,1894,0.0
+squad-57266dd4f1498d1400e8df78,squad,SimCSE,sentence,20,medieval,1.0
+squad-5733d13e4776f419006612c8,squad,SimCSE,sentence,20,expulsion,1.0
+squad-57269aa65951b619008f77ad,squad,SimCSE,sentence,20,legislation,0.0
+squad-572828383acd2414000df5c7,squad,SimCSE,sentence,20,Jon Pertwee,0.0
+squad-573784fa1c45671900574484,squad,SimCSE,sentence,20,Galileo Galilei,0.0
+squad-5726462b708984140094c118,squad,SimCSE,sentence,20,to extend networking benefits,1.0
+squad-5730b255396df919000962b3,squad,SimCSE,sentence,20,Eastern Europe,1.0
+squad-56d2051ce7d4791d00902608,squad,SimCSE,sentence,20,Fox,0.0
+squad-5725c123271a42140099d131,squad,SimCSE,sentence,20,George E. Mueller,1.0
+squad-57297bc9af94a219006aa4c7,squad,SimCSE,sentence,20,trial division,1.0
+squad-56d6f1190d65d21400198276,squad,SimCSE,sentence,20,seven,0.0
+squad-572843304b864d1900164849,squad,SimCSE,sentence,20,1950s,0.0
+squad-56f86b44a6d7ea1400e175f9,squad,SimCSE,sentence,20,faith,1.0
+squad-5729f3883f37b319004785f2,squad,SimCSE,sentence,20,Economic inequality,0.0
+squad-570d391fb3d812140066d578,squad,SimCSE,sentence,20,6.1 °C,0.0
+squad-5725cb33271a42140099d1dd,squad,SimCSE,sentence,20,bilaterians,1.0
+squad-57269526dd62a815002e8a50,squad,SimCSE,sentence,20,Royal Grammar School,1.0
+squad-57269d745951b619008f77db,squad,SimCSE,sentence,20,Newcastle University's students' union building,1.0
+squad-572fe288a23a5019007fcad9,squad,SimCSE,sentence,20,Rnaz,0.0
+squad-5728fc9e1d04691400778f11,squad,SimCSE,sentence,20,Civil disobedience,0.0
+squad-5726f8abf1498d1400e8f168,squad,SimCSE,sentence,20,Fritz Hasenöhrl,0.0
+squad-57283b91ff5b5019007d9fa4,squad,SimCSE,sentence,20,Season 11,1.0
+squad-5727f6723acd2414000df0e7,squad,SimCSE,sentence,20,union membership,1.0
+squad-5729f24baf94a219006aa6df,squad,SimCSE,sentence,20,more capital,1.0
+squad-573792ee1c456719005744b9,squad,SimCSE,sentence,20,electromagnetic theory,1.0
+squad-57291dfaaf94a219006aa09b,squad,SimCSE,sentence,20,geothermal energy,0.0
+squad-57297547af94a219006aa45c,squad,SimCSE,sentence,20,Christian Goldbach,1.0
+squad-5728848cff5b5019007da298,squad,SimCSE,sentence,20,Frederick W. Mote,1.0
+squad-5729e2316aef0514001550c8,squad,SimCSE,sentence,20,390 billion,0.0
+squad-57286bb84b864d19001649ca,squad,SimCSE,sentence,20,Alsace,0.0
+squad-56e19557e3433e1400422ff1,squad,SimCSE,sentence,20,how graphs are encoded as binary strings,1.0
+squad-572fdb17b2c2fd140056851d,squad,SimCSE,sentence,20,qualifications,1.0
+squad-56e7542f00c9c71400d76fbc,squad,SimCSE,sentence,20,skills,0.0
+squad-5726ce11f1498d1400e8ebc7,squad,SimCSE,sentence,20,Search,0.0
+squad-56f8046faef2371900625d72,squad,SimCSE,sentence,20,not very intelligent,0.0
+squad-56e12005cd28a01900c67619,squad,SimCSE,sentence,20,forced into an automobile,0.0
+squad-573027d6a23a5019007fce9f,squad,SimCSE,sentence,20,sharia law,1.0
+squad-5726af765951b619008f7a53,squad,SimCSE,sentence,20,Toghrul,0.0
+squad-56e1262fcd28a01900c67655,squad,SimCSE,sentence,20,online,0.0
+squad-56e77c6737bdd419002c401d,squad,SimCSE,sentence,20,es masse,0.0
+squad-56e77e4a00c9c71400d771b3,squad,SimCSE,sentence,20,doctrine,0.0
+squad-572958cc6aef051400154d2d,squad,SimCSE,sentence,20,grana,0.0
+squad-56e74af500c9c71400d76f66,squad,SimCSE,sentence,20,poetry,0.0
+squad-570603c475f01819005e7886,squad,SimCSE,sentence,20,Internet,0.0
+squad-57273dbbf1498d1400e8f509,squad,SimCSE,sentence,20,6,0.0
+squad-572928bf6aef051400154af2,squad,SimCSE,sentence,20,a new car,0.0
+squad-5727ffb5ff5b5019007d9a8d,squad,SimCSE,sentence,20,a blue British police box,0.0
+squad-57267f695951b619008f74be,squad,SimCSE,sentence,20,Stephen Kemble,1.0
+squad-572821ceff5b5019007d9db5,squad,SimCSE,sentence,20,the most popular,0.0
+squad-570d2556fed7b91900d45c49,squad,SimCSE,sentence,20,Berkeley,0.0
+squad-57113be3a58dae1900cd6d2a,squad,SimCSE,sentence,20,"750–1,200",0.0
+squad-5737821cc3c5551400e51f19,squad,SimCSE,sentence,20,Sir Isaac Newton,0.0
+squad-5730b07c8ab72b1400f9c698,squad,SimCSE,sentence,20,United Methodist Church,0.0
+squad-5725e748ec44d21400f3d733,squad,SimCSE,sentence,20,Spanish Colonial Revival Style architecture,0.0
+squad-5726dd71f1498d1400e8edd9,squad,SimCSE,sentence,20,Holland,0.0
+squad-5726b718dd62a815002e8dc1,squad,SimCSE,sentence,20,Commission v France,1.0
+squad-5727d6faff5b5019007d969d,squad,SimCSE,sentence,20,Pusey Library,1.0
+squad-56d204ade7d4791d00902604,squad,SimCSE,sentence,20,6,0.0
+squad-572fadcbb2c2fd140056832b,squad,SimCSE,sentence,20,failed,1.0
+nq-test-3283,nq,SimCSE,sentence,20,Judas,0.0
+nq-test-946,nq,SimCSE,sentence,20,Jennifer Lyons,0.0
+nq-test-985,nq,SimCSE,sentence,20,Emma (1996),0.0
+nq-test-2349,nq,SimCSE,sentence,20,"February 21, 2005",1.0
+nq-test-1612,nq,SimCSE,sentence,20,Laverne Cox,0.0
+nq-test-844,nq,SimCSE,sentence,20,Grisha,1.0
+nq-test-445,nq,SimCSE,sentence,20,Heaven 17,0.0
+nq-test-2576,nq,SimCSE,sentence,20,coupling amino acids,0.0
+nq-test-1006,nq,SimCSE,sentence,20,1996,1.0
+nq-test-964,nq,SimCSE,sentence,20,The Dome of the Rock,1.0
+nq-test-448,nq,SimCSE,sentence,20,somatic,1.0
+nq-test-2000,nq,SimCSE,sentence,20,The Caucasus Mountains,1.0
+nq-test-1210,nq,SimCSE,sentence,20,manufacturing company,0.0
+nq-test-1165,nq,SimCSE,sentence,20,2015,0.0
+nq-test-2983,nq,SimCSE,sentence,20,Cyndi Grecco,1.0
+nq-test-3571,nq,SimCSE,sentence,20,Mayson,0.0
+nq-test-3106,nq,SimCSE,sentence,20,ceramics,0.0
+nq-test-2104,nq,SimCSE,sentence,20,1700 Cascadia earthquake,1.0
+nq-test-878,nq,SimCSE,sentence,20,Cranleigh,0.0
+nq-test-2675,nq,SimCSE,sentence,20,David McCallum,1.0
+nq-test-3259,nq,SimCSE,sentence,20,2002,1.0
+nq-test-668,nq,SimCSE,sentence,20,Ingrid Bergman,1.0
+nq-test-3107,nq,SimCSE,sentence,20,"July 25, 2016",0.0
+nq-test-1454,nq,SimCSE,sentence,20,Hunter,0.0
+nq-test-2776,nq,SimCSE,sentence,20,April 1917,1.0
+nq-test-2782,nq,SimCSE,sentence,20,Michigan,1.0
+nq-test-1987,nq,SimCSE,sentence,20,1925,0.0
+nq-test-2291,nq,SimCSE,sentence,20,"July 18, 2017",0.0
+nq-test-2985,nq,SimCSE,sentence,20,petition for certiorari,0.0
+nq-test-377,nq,SimCSE,sentence,20,2.5 million years ago,0.0
+nq-test-342,nq,SimCSE,sentence,20,2017,1.0
+nq-test-2493,nq,SimCSE,sentence,20,20,1.0
+nq-test-1602,nq,SimCSE,sentence,20,Stephen Collins,0.0
+nq-test-789,nq,SimCSE,sentence,20,antimeridian,1.0
+nq-test-2836,nq,SimCSE,sentence,20,Andrew Lloyd Webber,1.0
+nq-test-1147,nq,SimCSE,sentence,20,Heroes and Villains,1.0
+nq-test-1500,nq,SimCSE,sentence,20,deceased donors,0.0
+nq-test-2571,nq,SimCSE,sentence,20,2003,1.0
+nq-test-2337,nq,SimCSE,sentence,20,2013,0.0
+nq-test-2580,nq,SimCSE,sentence,20,vanishing point,1.0
+nq-test-1559,nq,SimCSE,sentence,20,Vikki Carr,0.0
+nq-test-2568,nq,SimCSE,sentence,20,Natyashastra,0.0
+nq-test-1127,nq,SimCSE,sentence,20,Frankie Valli,1.0
+nq-test-2462,nq,SimCSE,sentence,20,Phil Simms,1.0
+nq-test-2831,nq,SimCSE,sentence,20,"Atlanta, Georgia",0.0
+nq-test-1675,nq,SimCSE,sentence,20,Georgia Groome,1.0
+nq-test-2672,nq,SimCSE,sentence,20,"March 18, 2018",0.0
+nq-test-3090,nq,SimCSE,sentence,20,Woody,0.0
+nq-test-1735,nq,SimCSE,sentence,20,23 August 1976,0.0
+nq-test-2889,nq,SimCSE,sentence,20,243,0.0
+nq-test-3078,nq,SimCSE,sentence,20,Revenge of the Sith,0.0
+nq-test-3517,nq,SimCSE,sentence,20,gesture,1.0
+nq-test-2608,nq,SimCSE,sentence,20,giant planet,0.0
+nq-test-19,nq,SimCSE,sentence,20,18,1.0
+nq-test-1547,nq,SimCSE,sentence,20,sport utility vehicle,0.0
+nq-test-1447,nq,SimCSE,sentence,20,1998,0.0
+nq-test-361,nq,SimCSE,sentence,20,Edward VII,1.0
+nq-test-728,nq,SimCSE,sentence,20,Matagorda Island,0.0
+nq-test-2969,nq,SimCSE,sentence,20,DNA polymerase,0.0
+nq-test-3267,nq,SimCSE,sentence,20,1966,1.0
+nq-test-3480,nq,SimCSE,sentence,20,fourth season,1.0
+nq-test-3321,nq,SimCSE,sentence,20,Frankie,0.0
+nq-test-2419,nq,SimCSE,sentence,20,Pariyaram medical college,0.0
+nq-test-20,nq,SimCSE,sentence,20,Indian Ocean,0.0
+nq-test-1546,nq,SimCSE,sentence,20,Stacy Title,0.0
+nq-test-1772,nq,SimCSE,sentence,20,Peter Andrew Beardsley,1.0
+nq-test-3061,nq,SimCSE,sentence,20,Beyoncé,0.0
+nq-test-1685,nq,SimCSE,sentence,20,"September 4, 2000",1.0
+nq-test-2076,nq,SimCSE,sentence,20,Gillian Anderson,0.0
+nq-test-663,nq,SimCSE,sentence,20,18,1.0
+nq-test-3438,nq,SimCSE,sentence,20,Tanos,0.0
+nq-test-573,nq,SimCSE,sentence,20,Article Two,1.0
+nq-test-733,nq,SimCSE,sentence,20,Roselia,0.0
+nq-test-1290,nq,SimCSE,sentence,20,Nashville Predators,1.0
+nq-test-1048,nq,SimCSE,sentence,20,Tesco,1.0
+nq-test-272,nq,SimCSE,sentence,20,16 October,0.0
+nq-test-2147,nq,SimCSE,sentence,20,Kirsten Simone Vangsness,1.0
+nq-test-1322,nq,SimCSE,sentence,20,"November 2, 2001",0.0
+nq-test-929,nq,SimCSE,sentence,20,"September 21, 2016",1.0
+nq-test-551,nq,SimCSE,sentence,20,11,0.0
+nq-test-27,nq,SimCSE,sentence,20,Lisa Stelly,1.0
+nq-test-1426,nq,SimCSE,sentence,20,63,0.0
+nq-test-2854,nq,SimCSE,sentence,20,Europe,0.0
+nq-test-2455,nq,SimCSE,sentence,20,in Wake County,0.0
+nq-test-3007,nq,SimCSE,sentence,20,Non-ferrous,1.0
+nq-test-148,nq,SimCSE,sentence,20,United States,0.0
+nq-test-3522,nq,SimCSE,sentence,20,Patrick Brown,1.0
+nq-test-2345,nq,SimCSE,sentence,20,1980,0.0
+nq-test-3260,nq,SimCSE,sentence,20,Jean Fernel,1.0
+nq-test-363,nq,SimCSE,sentence,20,first half,0.0
+nq-test-1657,nq,SimCSE,sentence,20,"Ledyard, Connecticut",0.0
+nq-test-3113,nq,SimCSE,sentence,20,malware,1.0
+nq-test-2557,nq,SimCSE,sentence,20,British Indian Association,1.0
+nq-test-0,nq,SimCSE,sentence,20,14 December 1972,0.0
+nq-test-990,nq,SimCSE,sentence,20,the torso,0.0
+nq-test-1598,nq,SimCSE,sentence,20,1940,0.0
+nq-test-414,nq,SimCSE,sentence,20,George Washington,0.0
+nq-test-2845,nq,SimCSE,sentence,20,Max,1.0
+nq-test-2180,nq,SimCSE,sentence,20,53,0.0
+nq-test-615,nq,SimCSE,sentence,20,Chloroplast,0.0
+nq-test-1047,nq,SimCSE,sentence,20,Lake Michigan,0.0
+nq-test-2177,nq,SimCSE,sentence,20,"May 11, 2018",0.0
+nq-test-3191,nq,SimCSE,sentence,20,Spanish,1.0
+nq-test-2407,nq,SimCSE,sentence,20,The Kills,0.0
+nq-test-730,nq,SimCSE,sentence,20,2018,0.0
+nq-test-3138,nq,SimCSE,sentence,20,Donald Duck,1.0
+nq-test-1406,nq,SimCSE,sentence,20,central state,0.0
+nq-test-3187,nq,SimCSE,sentence,20,Justin Timberlake,1.0
+nq-test-2423,nq,SimCSE,sentence,20,Kristy Swanson,1.0
+nq-test-2452,nq,SimCSE,sentence,20,Kaley Christine Cuoco,1.0
+nq-test-2851,nq,SimCSE,sentence,20,Carlos Tevez,0.0
+nq-test-3530,nq,SimCSE,sentence,20,"November 25, 2002",1.0
+nq-test-531,nq,SimCSE,sentence,20,1985,0.0
+nq-test-1101,nq,SimCSE,sentence,20,"June 21, 2021",0.0
+nq-test-2770,nq,SimCSE,sentence,20,Milli Vanilli,0.0
+nq-test-639,nq,SimCSE,sentence,20,aspirin,1.0
+nq-test-797,nq,SimCSE,sentence,20,United Kingdom,0.0
+nq-test-270,nq,SimCSE,sentence,20,2017,1.0
+nq-test-174,nq,SimCSE,sentence,20,"June 11, 2004",1.0
+nq-test-1854,nq,SimCSE,sentence,20,1983,1.0
+nq-test-3574,nq,SimCSE,sentence,20,Eydie Gormé,1.0
+nq-test-1214,nq,SimCSE,sentence,20,"February 16, 2018",1.0
+nq-test-1496,nq,SimCSE,sentence,20,Central Germany,1.0
+nq-test-520,nq,SimCSE,sentence,20,portal tomb,1.0
+nq-test-3239,nq,SimCSE,sentence,20,1776,0.0
+nq-test-3388,nq,SimCSE,sentence,20,Paris,1.0
+nq-test-2377,nq,SimCSE,sentence,20,13,0.0
+nq-test-3163,nq,SimCSE,sentence,20,1861,0.0
+nq-test-2861,nq,SimCSE,sentence,20,Gavrilo Princip,0.0
+nq-test-3485,nq,SimCSE,sentence,20,Andy Reid,0.0
+nq-test-3567,nq,SimCSE,sentence,20,Juan Francisco Ochoa,1.0
+nq-test-2629,nq,SimCSE,sentence,20,Lilo & Stitch: The Series,0.0
+nq-test-1584,nq,SimCSE,sentence,20,soils,0.0
+nq-test-3430,nq,SimCSE,sentence,20,two,0.0
+nq-test-2950,nq,SimCSE,sentence,20,Uttar Pradesh,0.0
+nq-test-1136,nq,SimCSE,sentence,20,Malta,1.0
+nq-test-392,nq,SimCSE,sentence,20,5.7 million,1.0
+nq-test-1243,nq,SimCSE,sentence,20,Hydrogen,1.0
+nq-test-530,nq,SimCSE,sentence,20,1922,0.0
+nq-test-145,nq,SimCSE,sentence,20,Nick Curran's girlfriend,0.0
+nq-test-727,nq,SimCSE,sentence,20,Wilt Chamberlain,1.0
+nq-test-1204,nq,SimCSE,sentence,20,"May 30, 2017",1.0
+nq-test-275,nq,SimCSE,sentence,20,"October 2, 2018",0.0
+nq-test-2540,nq,SimCSE,sentence,20,"more than 2,700",0.0
+nq-test-1431,nq,SimCSE,sentence,20,Robert Bosch,0.0
+nq-test-684,nq,SimCSE,sentence,20,"Landry's, Inc.",1.0
+nq-test-2330,nq,SimCSE,sentence,20,volume,0.0
+nq-test-3396,nq,SimCSE,sentence,20,Robert Nauseb,0.0
+nq-test-3505,nq,SimCSE,sentence,20,"Jefferson, Georgia",0.0
+nq-test-659,nq,SimCSE,sentence,20,"January 23, 2018",1.0
+nq-test-3214,nq,SimCSE,sentence,20,"October 10, 2017",1.0
+nq-test-3327,nq,SimCSE,sentence,20,back-flow prevention,1.0
+nq-test-380,nq,SimCSE,sentence,20,Bradley Cooper,0.0
+nq-test-2577,nq,SimCSE,sentence,20,member states,1.0
+nq-test-67,nq,SimCSE,sentence,20,Fix You,1.0
+nq-test-2128,nq,SimCSE,sentence,20,Conquest-class,0.0
+nq-test-1329,nq,SimCSE,sentence,20,Chief Judicial Magistrate Court,0.0
+nq-test-3365,nq,SimCSE,sentence,20,1931,0.0
+nq-test-959,nq,SimCSE,sentence,20,Liguria,0.0
+nq-test-943,nq,SimCSE,sentence,20,Vienna,1.0
+nq-test-1681,nq,SimCSE,sentence,20,850,0.0
+nq-test-238,nq,SimCSE,sentence,20,37,0.0
+nq-test-3579,nq,SimCSE,sentence,20,Phoenix,0.0
+nq-test-1850,nq,SimCSE,sentence,20,muscles,1.0
+nq-test-112,nq,SimCSE,sentence,20,Helena,1.0
+nq-test-1089,nq,SimCSE,sentence,20,September 2016,0.0
+nq-test-1475,nq,SimCSE,sentence,20,1936,0.0
+nq-test-3012,nq,SimCSE,sentence,20,Divine Mercy Sunday and Fridays,0.0
+nq-test-1921,nq,SimCSE,sentence,20,inside the brain,0.0
+nq-test-773,nq,SimCSE,sentence,20,ummah,1.0
+nq-test-316,nq,SimCSE,sentence,20,1966,1.0
+nq-test-2764,nq,SimCSE,sentence,20,Pyeongchang,0.0
+nq-test-3443,nq,SimCSE,sentence,20,Mark Rendall,0.0
+nq-test-698,nq,SimCSE,sentence,20,1995,1.0
+nq-test-1197,nq,SimCSE,sentence,20,Émile Gagnan,1.0
+nq-test-1046,nq,SimCSE,sentence,20,28 December 2015,0.0
+nq-test-2068,nq,SimCSE,sentence,20,"September 13, 2012",1.0
+nq-test-3405,nq,SimCSE,sentence,20,Neela Montgomery,1.0
+nq-test-1629,nq,SimCSE,sentence,20,Thawne,0.0
+nq-test-3465,nq,SimCSE,sentence,20,License,0.0
+nq-test-595,nq,SimCSE,sentence,20,the states,1.0
+nq-test-904,nq,SimCSE,sentence,20,the Louvre,0.0
+nq-test-3257,nq,SimCSE,sentence,20,Asia,1.0
+nq-test-478,nq,SimCSE,sentence,20,usually in May,1.0
+nq-test-1705,nq,SimCSE,sentence,20,war was declared,0.0
+nq-test-2200,nq,SimCSE,sentence,20,Monteith,0.0
+nq-test-144,nq,SimCSE,sentence,20,Real Madrid,1.0
+nq-test-21,nq,SimCSE,sentence,20,"Mission, British Columbia",1.0
+nq-test-1831,nq,SimCSE,sentence,20,"October 12, 2017",1.0
+nq-test-1534,nq,SimCSE,sentence,20,Anguillara Sabazia outside of Rome,1.0
+nq-test-667,nq,SimCSE,sentence,20,Sloane Stephens,1.0
+nq-test-1707,nq,SimCSE,sentence,20,4th-century,0.0
+nq-test-387,nq,SimCSE,sentence,20,Colman,1.0
+nq-test-410,nq,SimCSE,sentence,20,the Ramones,1.0
+nq-test-2247,nq,SimCSE,sentence,20,Sherwood Country Club,0.0
+nq-test-2073,nq,SimCSE,sentence,20,John W. Aldridge,0.0
+nq-test-1676,nq,SimCSE,sentence,20,The Marathas,0.0
+nq-test-599,nq,SimCSE,sentence,20,"""American Land""",0.0
+nq-test-2108,nq,SimCSE,sentence,20,2007,0.0
+nq-test-2486,nq,SimCSE,sentence,20,"July 14, 2017",1.0
+nq-test-885,nq,SimCSE,sentence,20,Toronto International Film Festival,0.0
+nq-test-312,nq,SimCSE,sentence,20,Mickey Mantle,1.0
+nq-test-3408,nq,SimCSE,sentence,20,"4,516",0.0
+nq-test-2476,nq,SimCSE,sentence,20,Kevin James,0.0
+nq-test-3228,nq,SimCSE,sentence,20,Cornelis Cort,0.0
+nq-test-3004,nq,SimCSE,sentence,20,Fundamental right,0.0
+nq-test-2712,nq,SimCSE,sentence,20,Lori McKenna,1.0
+nq-test-1427,nq,SimCSE,sentence,20,the Maharishi Valmiki,0.0
+nq-test-2807,nq,SimCSE,sentence,20,Ajay Tyagi,1.0
+nq-test-3589,nq,SimCSE,sentence,20,Alveolar process,1.0
+nq-test-73,nq,SimCSE,sentence,20,Inner Circle,1.0
+nq-test-3453,nq,SimCSE,sentence,20,oceanic-oceanic lithosphere,0.0
+nq-test-2003,nq,SimCSE,sentence,20,Kareem Abdul-Jabbar,0.0
+nq-test-3145,nq,SimCSE,sentence,20,France,1.0
+nq-test-44,nq,SimCSE,sentence,20,"January 17, 1988",0.0
+nq-test-1257,nq,SimCSE,sentence,20,Warne,0.0
+nq-test-1895,nq,SimCSE,sentence,20,Lionel Messi,0.0
+nq-test-3253,nq,SimCSE,sentence,20,"5,534",1.0
+nq-test-3179,nq,SimCSE,sentence,20,Garth Brooks,1.0
+nq-test-1007,nq,SimCSE,sentence,20,NASA astronaut Rex J. Walheim,0.0
+nq-test-3586,nq,SimCSE,sentence,20,2008,0.0
+nq-test-3609,nq,SimCSE,sentence,20,the people,0.0
+nq-test-2901,nq,SimCSE,sentence,20,Fantine,1.0
+nq-test-3557,nq,SimCSE,sentence,20,Haiti,1.0
+nq-test-257,nq,SimCSE,sentence,20,Kingdom of Saudi Arabia,0.0
+nq-test-545,nq,SimCSE,sentence,20,"March 6, 2018",1.0
+nq-test-2829,nq,SimCSE,sentence,20,Rodney Crowell,1.0
+nq-test-3177,nq,SimCSE,sentence,20,the early 1970s,0.0
+nq-test-36,nq,SimCSE,sentence,20,Disboard,0.0
+nq-test-1410,nq,SimCSE,sentence,20,Mediterranean Shipping Company,1.0
+nq-test-1459,nq,SimCSE,sentence,20,Reese Witherspoon,1.0
+nq-test-809,nq,SimCSE,sentence,20,1988,1.0
+nq-test-3336,nq,SimCSE,sentence,20,ensure party discipline,0.0
+nq-test-1120,nq,SimCSE,sentence,20,Henry Selick,1.0
+nq-test-1146,nq,SimCSE,sentence,20,Oceania,1.0
+nq-test-628,nq,SimCSE,sentence,20,203,1.0
+nq-test-710,nq,SimCSE,sentence,20,18.8 m,0.0
+nq-test-2287,nq,SimCSE,sentence,20,beauty,0.0
+nq-test-3015,nq,SimCSE,sentence,20,Eddie Durham,0.0
+nq-test-1380,nq,SimCSE,sentence,20,universal gravitation,0.0
+nq-test-88,nq,SimCSE,sentence,20,1768,0.0
+nq-test-2160,nq,SimCSE,sentence,20,oxygen,1.0
+nq-test-1991,nq,SimCSE,sentence,20,Morgan Woodward,1.0
+nq-test-2126,nq,SimCSE,sentence,20,1993,1.0
+nq-test-2152,nq,SimCSE,sentence,20,LeBron James,0.0
+nq-test-949,nq,SimCSE,sentence,20,Felix Baumgartner,1.0
+nq-test-2475,nq,SimCSE,sentence,20,Werner Ruchti,1.0
+nq-test-2667,nq,SimCSE,sentence,20,ulnar nerve,1.0
+nq-test-2239,nq,SimCSE,sentence,20,Alicia Vikander,0.0
+nq-test-3422,nq,SimCSE,sentence,20,Jean,0.0
+nq-test-3306,nq,SimCSE,sentence,20,mitosis,1.0
+nq-test-2134,nq,SimCSE,sentence,20,Robert Koch,1.0
+nq-test-1502,nq,SimCSE,sentence,20,"1,149 feet",1.0
+nq-test-3600,nq,SimCSE,sentence,20,ecological regions,1.0
+nq-test-1153,nq,SimCSE,sentence,20,pulmonary veins,0.0
+nq-test-2995,nq,SimCSE,sentence,20,Road/Track,1.0
+nq-test-3017,nq,SimCSE,sentence,20,"September 27, 2017",1.0
+nq-test-1868,nq,SimCSE,sentence,20,John B. Watson,1.0
+nq-test-142,nq,SimCSE,sentence,20,2017,1.0
+nq-test-2490,nq,SimCSE,sentence,20,Phoenix Mills Limited,1.0
+nq-test-199,nq,SimCSE,sentence,20,presidential representative democratic republic,1.0
+nq-test-2823,nq,SimCSE,sentence,20,1648–1651,0.0
+nq-test-769,nq,SimCSE,sentence,20,The Naughty Nineties,1.0
+nq-test-3084,nq,SimCSE,sentence,20,5,0.0
+nq-test-3299,nq,SimCSE,sentence,20,United States,0.0
+nq-test-735,nq,SimCSE,sentence,20,XI,1.0
+nq-test-3240,nq,SimCSE,sentence,20,peace,1.0
+nq-test-1379,nq,SimCSE,sentence,20,July,0.0
+nq-test-2099,nq,SimCSE,sentence,20,The Osmonds,1.0
+nq-test-416,nq,SimCSE,sentence,20,quarterback,1.0
+nq-test-218,nq,SimCSE,sentence,20,Firefall,0.0
+nq-test-2835,nq,SimCSE,sentence,20,Anglo-Saxon,0.0
+nq-test-1357,nq,SimCSE,sentence,20,1870s,0.0
+nq-test-81,nq,SimCSE,sentence,20,The President,1.0
+nq-test-2906,nq,SimCSE,sentence,20,a player,0.0
+nq-test-1371,nq,SimCSE,sentence,20,Sebastian Vettel,1.0
+nq-test-2639,nq,SimCSE,sentence,20,2010,0.0
+nq-test-3561,nq,SimCSE,sentence,20,making out,0.0
+nq-test-2393,nq,SimCSE,sentence,20,Cloud9,0.0
+nq-test-319,nq,SimCSE,sentence,20,"September 21, 2017",1.0
+nq-test-2431,nq,SimCSE,sentence,20,James Madison,1.0
+nq-test-1108,nq,SimCSE,sentence,20,rusts,0.0
+nq-test-1617,nq,SimCSE,sentence,20,Skat,1.0
+nq-test-2634,nq,SimCSE,sentence,20,gases,0.0
+nq-test-2428,nq,SimCSE,sentence,20,volume,1.0
+nq-test-2510,nq,SimCSE,sentence,20,13,0.0
+nq-test-399,nq,SimCSE,sentence,20,1 October 2006,1.0
+nq-test-3445,nq,SimCSE,sentence,20,1996,1.0
+nq-test-3495,nq,SimCSE,sentence,20,every person,0.0
+nq-test-321,nq,SimCSE,sentence,20,Christopher Lee,0.0
+nq-test-3081,nq,SimCSE,sentence,20,1937,1.0
+nq-test-2937,nq,SimCSE,sentence,20,1979,0.0
+nq-test-1057,nq,SimCSE,sentence,20,99,0.0
+nq-test-1551,nq,SimCSE,sentence,20,Yuvraj Singh,0.0
+nq-test-1996,nq,SimCSE,sentence,20,ILLCAMS,0.0
+nq-test-2016,nq,SimCSE,sentence,20,Edgar Wright,0.0
+nq-test-2416,nq,SimCSE,sentence,20,marks locations,1.0
+nq-test-72,nq,SimCSE,sentence,20,address sign,0.0
+nq-test-3513,nq,SimCSE,sentence,20,1901,0.0
+nq-test-365,nq,SimCSE,sentence,20,the Senate,1.0
+nq-test-2724,nq,SimCSE,sentence,20,Edgerrin James,0.0
+nq-test-1381,nq,SimCSE,sentence,20,Jane Green,0.0
+nq-test-3516,nq,SimCSE,sentence,20,Gladys Knight & the Pips,0.0
+nq-test-1442,nq,SimCSE,sentence,20,2021),0.0
+nq-test-2454,nq,SimCSE,sentence,20,Christianity,0.0
+nq-test-3357,nq,SimCSE,sentence,20,Vince Gill,0.0
+nq-test-3049,nq,SimCSE,sentence,20,Philip Seymour Hoffman,1.0
+nq-test-1691,nq,SimCSE,sentence,20,1972–1975,0.0
+nq-test-803,nq,SimCSE,sentence,20,standing up for oneself,1.0
+nq-test-1900,nq,SimCSE,sentence,20,341 metres per second,0.0
+nq-test-1832,nq,SimCSE,sentence,20,Bob Geldof,1.0
+nq-test-2112,nq,SimCSE,sentence,20,King Solomon,0.0
+nq-test-1700,nq,SimCSE,sentence,20,Manhattan,1.0
+nq-test-1289,nq,SimCSE,sentence,20,Bee Gees,1.0
+nq-test-3185,nq,SimCSE,sentence,20,Jerry Rice,1.0
+nq-test-2089,nq,SimCSE,sentence,20,8 pm – 8.30 pm,0.0
+nq-test-1423,nq,SimCSE,sentence,20,Ed Roland,1.0
+nq-test-1399,nq,SimCSE,sentence,20,Alex Ryan,1.0
+nq-test-1608,nq,SimCSE,sentence,20,Robert Forster,0.0
+nq-test-1419,nq,SimCSE,sentence,20,Anneliese van der Pol,0.0
+nq-test-2638,nq,SimCSE,sentence,20,Christopher Lloyd,0.0
+nq-test-2027,nq,SimCSE,sentence,20,January 2007,0.0
+nq-test-3375,nq,SimCSE,sentence,20,7 a.m.-2 a.m.,0.0
+nq-test-1520,nq,SimCSE,sentence,20,Walt Disney Productions,0.0
+nq-test-204,nq,SimCSE,sentence,20,fourth grade,0.0
+nq-test-1151,nq,SimCSE,sentence,20,Tachycardia,1.0
+nq-test-346,nq,SimCSE,sentence,20,Freddie Highmore,1.0
+nq-test-2163,nq,SimCSE,sentence,20,Polly Lou Livingston,0.0
+nq-test-3352,nq,SimCSE,sentence,20,victim blaming,1.0
+nq-test-2949,nq,SimCSE,sentence,20,United States,0.0
+nq-test-2512,nq,SimCSE,sentence,20,Buddhism,1.0
+nq-test-1362,nq,SimCSE,sentence,20,work,0.0
+nq-test-1017,nq,SimCSE,sentence,20,imputation,0.0
+nq-test-704,nq,SimCSE,sentence,20,Paris,0.0
+nq-test-729,nq,SimCSE,sentence,20,Franklin D. Roosevelt,0.0
+nq-test-336,nq,SimCSE,sentence,20,Ewan McGregor,1.0
+nq-test-1155,nq,SimCSE,sentence,20,seven,0.0
+nq-test-55,nq,SimCSE,sentence,20,tiercerons,0.0
+nq-test-2722,nq,SimCSE,sentence,20,New York Yankees,1.0
+nq-test-781,nq,SimCSE,sentence,20,six,1.0
+nq-test-1436,nq,SimCSE,sentence,20,Doug Pederson,0.0
+nq-test-3276,nq,SimCSE,sentence,20,lifetime,1.0
+nq-test-3263,nq,SimCSE,sentence,20,1648,0.0
+nq-test-2150,nq,SimCSE,sentence,20,2010,1.0
+nq-test-1067,nq,SimCSE,sentence,20,Flynn,0.0
+nq-test-3218,nq,SimCSE,sentence,20,Burj Khalifa,1.0
+nq-test-2190,nq,SimCSE,sentence,20,7,0.0
+nq-test-757,nq,SimCSE,sentence,20,Henry the Navigator,0.0
+nq-test-259,nq,SimCSE,sentence,20,Can't Change Me,1.0
+nq-test-1187,nq,SimCSE,sentence,20,Patrick Walshe,1.0
+nq-test-3054,nq,SimCSE,sentence,20,Myllokunmingia,1.0
+nq-test-3018,nq,SimCSE,sentence,20,Firefall,0.0
+nq-test-505,nq,SimCSE,sentence,20,Michael English,1.0
+nq-test-2369,nq,SimCSE,sentence,20,Bactrian,1.0
+nq-test-1790,nq,SimCSE,sentence,20,Carson Wentz,0.0
+nq-test-2563,nq,SimCSE,sentence,20,Bing Crosby,0.0
+nq-test-366,nq,SimCSE,sentence,20,MyShake,0.0
+nq-test-568,nq,SimCSE,sentence,20,"March 4, 2018",0.0
+nq-test-2691,nq,SimCSE,sentence,20,Dave Edmunds,1.0
+nq-test-3576,nq,SimCSE,sentence,20,"December 31, 2013",0.0
+nq-test-123,nq,SimCSE,sentence,20,Camping World Stadium,1.0
+nq-test-1347,nq,SimCSE,sentence,20,Alaska,0.0
+nq-test-2224,nq,SimCSE,sentence,20,South America,0.0
+nq-test-2636,nq,SimCSE,sentence,20,Big Ten Conference,0.0
+nq-test-2241,nq,SimCSE,sentence,20,middle brain stem,0.0
+nq-test-2915,nq,SimCSE,sentence,20,Gary Player,1.0
+nq-test-1497,nq,SimCSE,sentence,20,detention camp,0.0
+nq-test-35,nq,SimCSE,sentence,20,Kim Deal,0.0
+nq-test-3144,nq,SimCSE,sentence,20,mid-1970s,1.0
+nq-test-1064,nq,SimCSE,sentence,20,Staci Keanan,1.0
+nq-test-2688,nq,SimCSE,sentence,20,2009,0.0
+nq-test-3481,nq,SimCSE,sentence,20,Bart Millard,1.0
+nq-test-2339,nq,SimCSE,sentence,20,1931,1.0
+nq-test-650,nq,SimCSE,sentence,20,2001,1.0
+nq-test-1802,nq,SimCSE,sentence,20,Mesopotamia,0.0
+nq-test-2834,nq,SimCSE,sentence,20,strong westerly winds,0.0
+nq-test-3514,nq,SimCSE,sentence,20,non-partisan,1.0
+nq-test-561,nq,SimCSE,sentence,20,Poems: Series 1,1.0
+nq-test-1173,nq,SimCSE,sentence,20,Eddie Redmayne,1.0
+nq-test-2288,nq,SimCSE,sentence,20,January 2019,0.0
+nq-test-3009,nq,SimCSE,sentence,20,Advisory speed limit,0.0
+nq-test-2623,nq,SimCSE,sentence,20,Jeff East,1.0
+nq-test-910,nq,SimCSE,sentence,20,June 1991,1.0
+nq-test-1282,nq,SimCSE,sentence,20,Peyton Manning,1.0
+nq-test-1332,nq,SimCSE,sentence,20,Sophie Sumner,0.0
+nq-test-3092,nq,SimCSE,sentence,20,John Milton,0.0
+nq-test-201,nq,SimCSE,sentence,20,Ram Nath Kovind,1.0
+nq-test-3298,nq,SimCSE,sentence,20,1972,1.0
+nq-test-1398,nq,SimCSE,sentence,20,1998,1.0
+nq-test-863,nq,SimCSE,sentence,20,tenant farmers,0.0
+nq-test-503,nq,SimCSE,sentence,20,chloroplast,0.0
+nq-test-723,nq,SimCSE,sentence,20,Representative,0.0
+nq-test-2471,nq,SimCSE,sentence,20,The Pointer Sisters,0.0
+nq-test-528,nq,SimCSE,sentence,20,"Hesse, Germany",1.0
+nq-test-861,nq,SimCSE,sentence,20,5–12 September 1914,0.0
+nq-test-2936,nq,SimCSE,sentence,20,two,0.0
+nq-test-638,nq,SimCSE,sentence,20,Mark Shuttleworth,0.0
+nq-test-3346,nq,SimCSE,sentence,20,Vancouver,1.0
+nq-test-2754,nq,SimCSE,sentence,20,13 February,1.0
+nq-test-160,nq,SimCSE,sentence,20,Baccara,0.0
+nq-test-908,nq,SimCSE,sentence,20,168,0.0
+nq-test-2265,nq,SimCSE,sentence,20,autopistas,1.0
+nq-test-1951,nq,SimCSE,sentence,20,Martin,0.0
+nq-test-2526,nq,SimCSE,sentence,20,around 1872,1.0
+nq-test-3045,nq,SimCSE,sentence,20,37,0.0
+nq-test-834,nq,SimCSE,sentence,20,Paul Williams,1.0
+nq-test-1098,nq,SimCSE,sentence,20,129 minutes,0.0
+nq-test-2796,nq,SimCSE,sentence,20,The Rolling Stones,0.0
+nq-test-3014,nq,SimCSE,sentence,20,Chris Rock,0.0
+nq-test-1477,nq,SimCSE,sentence,20,the sinoatrial node,1.0
+nq-test-1800,nq,SimCSE,sentence,20,Utah,1.0
+nq-test-1503,nq,SimCSE,sentence,20,this autumn,0.0
+nq-test-2386,nq,SimCSE,sentence,20,giant,0.0
+nq-test-3067,nq,SimCSE,sentence,20,Human fertilization,1.0
+nq-test-2507,nq,SimCSE,sentence,20,Mexico,0.0
+nq-test-2613,nq,SimCSE,sentence,20,prom,0.0
+nq-test-3606,nq,SimCSE,sentence,20,New York University,1.0
+nq-test-1986,nq,SimCSE,sentence,20,Wilt Chamberlain,1.0
+nq-test-170,nq,SimCSE,sentence,20,early colonial Virginia,0.0
+nq-test-2343,nq,SimCSE,sentence,20,1994,0.0
+nq-test-1518,nq,SimCSE,sentence,20,Manchu,0.0
+nq-test-155,nq,SimCSE,sentence,20,2018,0.0
+nq-test-3011,nq,SimCSE,sentence,20,on the back of the wrist,0.0
+nq-test-2602,nq,SimCSE,sentence,20,Munich,0.0
+nq-test-3231,nq,SimCSE,sentence,20,9%,0.0
+nq-test-2020,nq,SimCSE,sentence,20,St. Ignatius of Loyola,1.0
+nq-test-2045,nq,SimCSE,sentence,20,New York Yankees,1.0
+nq-test-304,nq,SimCSE,sentence,20,"May 25, 2010",0.0
+nq-test-2113,nq,SimCSE,sentence,20,the Korean Empire,1.0
+nq-test-697,nq,SimCSE,sentence,20,Data Protection Act 1998,1.0
+nq-test-527,nq,SimCSE,sentence,20,William the Conqueror,1.0
+nq-test-1874,nq,SimCSE,sentence,20,Spain,0.0
+nq-test-1916,nq,SimCSE,sentence,20,1912,1.0
+nq-test-2082,nq,SimCSE,sentence,20,The Lumineers,0.0
+nq-test-3116,nq,SimCSE,sentence,20,evaluating alternatives,0.0
+nq-test-400,nq,SimCSE,sentence,20,1689,1.0
+nq-test-247,nq,SimCSE,sentence,20,The Spartans,0.0
+nq-test-2897,nq,SimCSE,sentence,20,Border Collie,1.0
+nq-test-2075,nq,SimCSE,sentence,20,"over 50,000 undergraduate and graduate students",0.0
+nq-test-141,nq,SimCSE,sentence,20,Democrats,0.0
+nq-test-732,nq,SimCSE,sentence,20,Riverwood Studios,0.0
+nq-test-1553,nq,SimCSE,sentence,20,appointed,1.0
+nq-test-602,nq,SimCSE,sentence,20,23,1.0
+nq-test-2359,nq,SimCSE,sentence,20,Daniel Francis Haggerty,0.0
+nq-test-1570,nq,SimCSE,sentence,20,Tom Holland,0.0
+nq-test-2011,nq,SimCSE,sentence,20,Angat River Reserve in Rizal,0.0
+nq-test-2960,nq,SimCSE,sentence,20,Michael Jordan,0.0
+nq-test-3437,nq,SimCSE,sentence,20,Brian Jones,0.0
+nq-test-1474,nq,SimCSE,sentence,20,employment discrimination,0.0
+nq-test-2053,nq,SimCSE,sentence,20,Walter Damrosch,1.0
+nq-test-3280,nq,SimCSE,sentence,20,Maine,1.0
+nq-test-2301,nq,SimCSE,sentence,20,The Devotee,0.0
+nq-test-2292,nq,SimCSE,sentence,20,Panic! at the Disco,1.0
+nq-test-266,nq,SimCSE,sentence,20,1994,1.0
+nq-test-124,nq,SimCSE,sentence,20,19th century,0.0
+nq-test-1781,nq,SimCSE,sentence,20,0x,0.0
+nq-test-1199,nq,SimCSE,sentence,20,Mel Gibson,1.0
+nq-test-1420,nq,SimCSE,sentence,20,the series finale,0.0
+nq-test-371,nq,SimCSE,sentence,20,Agriculture,1.0
+nq-test-1247,nq,SimCSE,sentence,20,Manish kashniyal,0.0
+nq-test-529,nq,SimCSE,sentence,20,Nurhaci,0.0
+nq-test-1220,nq,SimCSE,sentence,20,1940,1.0
+nq-test-1847,nq,SimCSE,sentence,20,Elizabeth Taylor,0.0
+nq-test-3424,nq,SimCSE,sentence,20,Urge Overkill,1.0
+nq-test-197,nq,SimCSE,sentence,20,pools campaign contributions from members,1.0
+nq-test-2575,nq,SimCSE,sentence,20,Great Depression,0.0
+nq-test-2117,nq,SimCSE,sentence,20,"4,067",0.0
+nq-test-3274,nq,SimCSE,sentence,20,2 bytes,0.0
+nq-test-567,nq,SimCSE,sentence,20,plate tectonics,0.0
+nq-test-1644,nq,SimCSE,sentence,20,the thorax,0.0
+nq-test-2707,nq,SimCSE,sentence,20,the Governor,0.0
+nq-test-1709,nq,SimCSE,sentence,20,1984,1.0
+nq-test-3025,nq,SimCSE,sentence,20,14.0.4763.1000,0.0
+nq-test-827,nq,SimCSE,sentence,20,Samantha Hill,1.0
+nq-test-3572,nq,SimCSE,sentence,20,human induced greenhouse warming,1.0
+nq-test-2300,nq,SimCSE,sentence,20,Obi,1.0
+nq-test-2658,nq,SimCSE,sentence,20,"October 8, 2013",0.0
+nq-test-3111,nq,SimCSE,sentence,20,Gnash,0.0
+nq-test-1650,nq,SimCSE,sentence,20,Sakshi Malik,1.0
+nq-test-1583,nq,SimCSE,sentence,20,closed shell,0.0
+nq-test-1555,nq,SimCSE,sentence,20,Sukhwinder Singh,0.0
+nq-test-3233,nq,SimCSE,sentence,20,at birth,1.0
+nq-test-2294,nq,SimCSE,sentence,20,Times Square in New York City,0.0
+nq-test-2065,nq,SimCSE,sentence,20,Sundays at 11:30 pm,0.0
+nq-test-3065,nq,SimCSE,sentence,20,Thomas Hobbes,0.0
+nq-test-455,nq,SimCSE,sentence,20,Adkins,0.0
+nq-test-1822,nq,SimCSE,sentence,20,near Fulton,0.0
+nq-test-5,nq,SimCSE,sentence,20,"about 125,000 years ago",0.0
+nq-test-1596,nq,SimCSE,sentence,20,radio and digital television signals,0.0
+nq-test-1364,nq,SimCSE,sentence,20,Zoé Lee,0.0
+nq-test-1514,nq,SimCSE,sentence,20,Ciel Bleu,0.0
+nq-test-324,nq,SimCSE,sentence,20,Linus Torvalds,0.0
+nq-test-2066,nq,SimCSE,sentence,20,Ki Toy Johnson,1.0
+nq-test-1933,nq,SimCSE,sentence,20,Nancy Jean Cartwright,1.0
+nq-test-1639,nq,SimCSE,sentence,20,directly into the bloodstream,1.0
+nq-test-1457,nq,SimCSE,sentence,20,Swedish,0.0
+nq-test-2092,nq,SimCSE,sentence,20,the Latin word occidens,0.0
+nq-test-3031,nq,SimCSE,sentence,20,United States,0.0
+nq-test-2605,nq,SimCSE,sentence,20,West Africa,0.0
+nq-test-1840,nq,SimCSE,sentence,20,loop,1.0

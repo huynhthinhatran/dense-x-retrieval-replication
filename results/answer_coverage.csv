@@ -1,0 +1,3 @@
+dataset,answer_in_gold_page_pct,answer_in_corpus_pct,median_passages_with_answer
+nq,82.0,90.0,6.0
+squad,86.4,90.2,5.0

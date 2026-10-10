@@ -1,0 +1,15 @@
+dataset,,nq,nq,squad,squad
+budget,,100,500,100,500
+retriever,granularity,,,,
+Contriever,passage,38.6,44.2,29.0,43.6
+Contriever,proposition,38.8,42.0,41.0,45.4
+Contriever,sentence,39.2,40.8,39.6,42.8
+DPR,passage,43.4,48.2,23.8,34.6
+DPR,proposition,45.2,49.0,32.6,36.4
+DPR,sentence,45.4,49.2,29.2,38.4
+GTR,passage,41.8,48.4,31.6,42.0
+GTR,proposition,45.6,48.8,46.2,44.0
+GTR,sentence,45.8,48.6,42.4,44.4
+SimCSE,passage,34.6,36.6,24.0,33.6
+SimCSE,proposition,39.4,43.4,33.4,39.2
+SimCSE,sentence,36.0,41.0,30.8,37.6

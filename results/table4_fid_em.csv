@@ -1,0 +1,13 @@
+,,NQ EM@top5,NQ EM@top20,SQUAD EM@top5,SQUAD EM@top20
+SimCSE,passage,27.6,38.0,28.2,34.6
+SimCSE,sentence,34.0,44.0,34.6,40.2
+SimCSE,proposition,36.8,47.4,36.0,40.8
+Contriever,passage,32.8,47.2,41.0,48.8
+Contriever,sentence,36.4,47.4,44.2,49.0
+Contriever,proposition,38.2,48.8,46.4,48.4
+DPR,passage,50.8,52.8,31.0,38.0
+DPR,sentence,50.2,54.0,34.4,41.4
+DPR,proposition,48.4,53.6,35.8,42.4
+GTR,passage,51.0,53.4,43.8,46.6
+GTR,sentence,51.8,53.6,49.2,49.4
+GTR,proposition,52.2,53.2,50.2,50.8

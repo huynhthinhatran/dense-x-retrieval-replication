@@ -1,0 +1,13 @@
+,,NQ GoldPage@20,NQ GoldPage@5,SQUAD GoldPage@20,SQUAD GoldPage@5
+SimCSE,passage,88.0,80.2,82.6,73.0
+SimCSE,sentence,93.2,86.6,84.4,74.2
+SimCSE,proposition,95.0,90.4,84.8,75.6
+Contriever,passage,98.0,95.6,92.0,85.8
+Contriever,sentence,97.6,95.2,92.0,86.6
+Contriever,proposition,98.4,96.6,91.8,87.2
+DPR,passage,98.6,97.4,81.0,72.4
+DPR,sentence,98.6,96.8,82.0,73.4
+DPR,proposition,98.4,97.0,82.2,76.2
+GTR,passage,98.6,98.2,90.0,85.2
+GTR,sentence,98.4,97.6,90.8,87.4
+GTR,proposition,98.6,97.6,93.6,89.4

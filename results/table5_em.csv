@@ -1,0 +1,14 @@
+,,NQ EM@100,NQ EM@500,SQUAD EM@100,SQUAD EM@500
+SimCSE,passage,31.8,33.6,20.4,28.4
+SimCSE,sentence,33.2,37.8,26.8,32.0
+SimCSE,proposition,37.0,39.8,28.4,33.4
+Contriever,passage,36.4,40.6,24.2,38.0
+Contriever,sentence,36.6,37.0,34.4,36.4
+Contriever,proposition,36.2,39.2,35.2,39.8
+DPR,passage,40.6,44.8,20.8,30.0
+DPR,sentence,42.0,46.0,25.8,34.0
+DPR,proposition,42.2,45.4,27.2,31.8
+GTR,passage,38.8,45.0,27.6,37.4
+GTR,sentence,42.8,45.0,38.4,39.2
+GTR,proposition,42.0,44.4,40.2,39.0
+Closed-book,-,25.8,25.8,14.6,14.6

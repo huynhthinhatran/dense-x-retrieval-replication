@@ -1,0 +1,3 @@
+dataset,questions checked,questions chosen,unique titles checked,exact,casefold,missing,title match %,gold pages (chosen)
+SQuAD,625,500,48,45,0,3,93.8,45
+NQ,625,500,612,566,5,41,93.3,492

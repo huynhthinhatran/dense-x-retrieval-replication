@@ -1,0 +1,13 @@
+retriever,granularity,#units,dim,index_MB_fp16,encode_sec,search_ms_per_query,units retrieved for 20 passages_x,units retrieved for 20 passages_y
+SimCSE,passage,78537,768,115.0,69.8,0.197,20.0,20.0
+SimCSE,sentence,224133,768,328.3,103.9,0.09,26.0,26.0
+SimCSE,proposition,506413,768,741.8,151.6,0.23,35.0,35.0
+Contriever,passage,78537,768,115.0,80.5,0.027,20.0,20.0
+Contriever,sentence,224133,768,328.3,106.6,0.121,29.8,29.8
+Contriever,proposition,506413,768,741.8,152.1,0.239,42.6,42.6
+DPR,passage,78537,768,115.0,80.1,0.025,20.0,20.0
+DPR,sentence,224133,768,328.3,105.2,0.09,28.4,28.4
+DPR,proposition,506413,768,741.8,152.3,0.254,39.8,39.8
+GTR,passage,78537,768,115.0,236.3,0.025,20.0,20.0
+GTR,sentence,224133,768,328.3,288.2,0.126,26.8,26.8
+GTR,proposition,506413,768,741.8,430.8,0.226,37.1,37.1

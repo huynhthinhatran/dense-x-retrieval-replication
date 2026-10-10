@@ -1,35 +1,35 @@
-# Results Report — Dense X Retrieval Replication (SEG301)
+# Báo cáo kết quả — Dense X Retrieval Replication (SEG301)
 
 **Paper:** [Dense X Retrieval: What Retrieval Granularity Should We Use?](https://arxiv.org/abs/2312.06648) (Chen et al., EMNLP 2024)
-**Notebook:** [`notebooks/densex_replication_run1,2.ipynb`](notebooks/) · **Results:** [`results/`](results/) · **Setup:** [PLAN.md](PLAN.md)
-**Comparison with the paper:** [`analysis/compare_with_paper.py`](analysis/compare_with_paper.py) → `results/paper_vs_ours.csv`, `results/trend_summary.csv`
+**Notebook:** [`notebooks/densex_replication_run1,2.ipynb`](notebooks/) · **Kết quả:** [`results/`](results/) · **Setup:** [PLAN.md](PLAN.md)
+**So sánh với paper:** [`analysis/compare_with_paper.py`](analysis/compare_with_paper.py) → `results/paper_vs_ours.csv`, `results/trend_summary.csv`
 
-## Summary
+## Tóm tắt
 
-- **Retrieval (Table 3):** proposition beats passage on Recall in **14/16 cells** (NQ, SQuAD × 4 retrievers × R@5/R@20). The full ordering Proposition > Sentence > Passage holds in **11/16 cells** (paper: 14/16). The sign of Δ(proposition − passage) **matches the paper in all 16/16 cells**, including the 2 cells where proposition loses (DPR on NQ), where the paper also reports a loss.
-- **Statistical tests:** proposition beats passage **significantly (McNemar p < 0.05) in 11/16** Recall cells and **10/16** FiD EM cells. **No cell** shows passage significantly beating proposition.
-- **QA:** proposition > passage in 13/16 cells for FiD (Table 4) and in 13/16 cells for LLaMA-2-7B (Table 5). Every retrieval-augmented setting beats closed-book.
-- **Difference from the paper:** absolute Recall and EM are about 5–20 points higher than in the paper because the corpus has only 8,000 pages. We therefore compare **trends**, not absolute numbers.
-- **Conclusion:** the paper's main trend is reproduced. Propositions help most for **unsupervised** retrievers (SimCSE, Contriever) and on **unseen** data (SQuAD), and make almost no difference for supervised retrievers on NQ. The trend does **not** hold in 100% of cells, and neither does it in the paper.
+- **Retrieval (Table 3):** proposition có Recall cao hơn passage ở **14/16 ô** (NQ, SQuAD × 4 retriever × R@5/R@20). Thứ tự đầy đủ Proposition > Sentence > Passage giữ ở **11/16 ô** (paper: 14/16). Dấu của Δ(proposition − passage) **trùng với paper ở cả 16/16 ô**, kể cả 2 ô proposition thua (DPR trên NQ), nơi paper cũng thua.
+- **Kiểm định thống kê:** proposition thắng passage **có ý nghĩa (McNemar p < 0.05) ở 11/16 ô** Recall và **10/16 ô** FiD EM. **Không có ô nào** passage thắng proposition có ý nghĩa.
+- **QA:** proposition > passage ở 13/16 ô với FiD (Table 4) và 13/16 ô với LLaMA-2-7B (Table 5). Mọi cấu hình có retrieval đều vượt closed-book.
+- **Khác paper:** Recall và EM tuyệt đối cao hơn paper khoảng 5–20 điểm, do corpus chỉ có 8,000 pages. Vì vậy chỉ so sánh **xu hướng**, không so số tuyệt đối.
+- **Kết luận:** xu hướng chính của paper được tái hiện. Proposition giúp nhiều nhất với retriever **unsupervised** (SimCSE, Contriever) và trên dữ liệu **chưa thấy** (SQuAD), gần như không đổi với retriever supervised trên NQ. Xu hướng **không** giữ ở 100% ô, và paper cũng không giữ 100%.
 
-## 1. Actual setup
+## 1. Setup thực tế
 
-| | Value |
+| | Giá trị |
 |---|---|
-| Corpus | 8,000 FactoidWiki pages = 537 gold pages (SQuAD 45, NQ 492) + 7,463 random distractors (pool of 2.2M pages, 367 shards) |
+| Corpus | 8,000 pages FactoidWiki = 537 gold pages (SQuAD 45, NQ 492) + 7,463 distractor random (pool 2.2M pages, 367 shards) |
 | Units | passage 78,537 · sentence 224,133 · proposition 506,413 |
-| Average length | passage 62.5 words (paper 58.5) · sentence 21.9 (21.0) · proposition 11.5 (11.2) |
-| Questions | 500 SQuAD v1.1 dev + 500 NQ-open test, seed 42 |
-| Gold titles | 93.8% matched (SQuAD), 93.3% (NQ); missing titles are listed in `missing_titles_*.csv` |
-| Answer present in corpus | NQ 90.0% · SQuAD 90.2% (`answer_coverage.csv`) |
-| Leakage control | removed 8 SQuAD dev questions duplicated in train; no NQ overlap; SQuAD dev titles ∩ train titles = ∅ |
-| FiD sanity check | oracle EM on 100 NQ questions = 57.0 (`fid_sanity.json`) → checkpoint loaded correctly |
+| Độ dài trung bình | passage 62.5 từ (paper 58.5) · sentence 21.9 (21.0) · proposition 11.5 (11.2) |
+| Câu hỏi | 500 SQuAD v1.1 dev + 500 NQ-open test, seed 42 |
+| Gold title | match 93.8% (SQuAD), 93.3% (NQ); title thiếu được liệt kê trong `missing_titles_*.csv` |
+| Answer có trong corpus | NQ 90.0% · SQuAD 90.2% (`answer_coverage.csv`) |
+| Chống leak | bỏ 8 câu SQuAD dev trùng train; NQ không trùng; title SQuAD dev ∩ train = ∅ |
+| Sanity FiD | oracle EM trên 100 câu NQ = 57.0 (`fid_sanity.json`) → checkpoint nạp đúng |
 
-**Why 8,000 pages:** the paper's full corpus has 6M pages and 257M propositions. Encoding that with 4 retrievers × 3 granularities is far beyond the Kaggle GPU quota (T4×2, 30h/week) and disk limit. With 8,000 pages, ~506k propositions × 4 retrievers in fp16 is about 3 GB, and the whole pipeline fits in 2 sessions.
+**Vì sao chọn 8,000 pages:** corpus đầy đủ của paper có 6M pages, 257M propositions. Encode 4 retriever × 3 granularity cho cỡ đó vượt xa quota GPU Kaggle (T4×2, 30h/tuần) và dung lượng đĩa. Với 8,000 pages, ~506k propositions × 4 retriever fp16 ≈ 3 GB, và toàn bộ pipeline chạy trong 2 session.
 
 ## 2. Retrieval — Table 3 (Passage Recall@k)
 
-Data: `table3_recall.csv`, `trend_check.csv`, `paper_vs_ours.csv`
+Số liệu: `table3_recall.csv`, `trend_check.csv`, `paper_vs_ours.csv`
 
 | Retriever | Granularity | NQ R@5 | NQ R@20 | SQuAD R@5 | SQuAD R@20 |
 |---|---|---|---|---|---|
@@ -46,7 +46,7 @@ Data: `table3_recall.csv`, `trend_check.csv`, `paper_vs_ours.csv`
 | | sentence | 73.0 | 81.2 | 73.0 | 78.4 |
 | | proposition | **74.8** | **81.6** | **75.2** | **81.8** |
 
-**Δ(proposition − passage), paper vs ours:**
+**Δ(proposition − passage), paper vs nhóm:**
 
 | Retriever | NQ R@5 | NQ R@20 | SQuAD R@5 | SQuAD R@20 |
 |---|---|---|---|---|
@@ -55,24 +55,24 @@ Data: `table3_recall.csv`, `trend_check.csv`, `paper_vs_ours.csv`
 | DPR | −0.6 / **−1.8** | −0.3 / **−0.6** | +3.1 / **+7.0** | +3.3 / **+5.4** |
 | GTR | +0.2 / **+0.6** | +1.2 / **+0.4** | +8.9 / **+7.6** | +6.9 / **+6.0** |
 
-(paper / **ours**)
+(paper / **nhóm**)
 
-**Observations:**
+**Nhận xét:**
 
-1. **Unsupervised retrievers benefit the most.** SimCSE gains 9–16 points and keeps the full Prop > Sent > Pass ordering in 4/4 cells. Contriever keeps it in 3/4 cells; on SQuAD R@20 the three granularities are nearly tied (76.6–77.6).
-2. **Supervised retrievers on NQ: almost no difference.** DPR (trained on NQ) and GTR (fine-tuned with NQ) have Δ within ±2 points. The paper reports the same: *"all supervised retrievers demonstrate comparable performance across three levels of retrieval granularity in NQ, TQA, and WebQ"*, and attributes it to these retrievers being trained on query–passage pairs. The two DPR/NQ cells where proposition loses **reproduce the paper**; they are not a bug.
-3. **On SQuAD, proposition wins for all 4 retrievers** (+6 to +10 points at R@5), including the supervised ones. This supports the paper's argument that propositions help retrievers **generalize** to a different question distribution.
-4. **Raw counts:** full ordering in 11/16 cells (paper 14/16), proposition > passage in 14/16, Δ sign matching the paper in 16/16. The 3 cells that "lose" the ordering compared with the paper (GTR/NQ ×2, Contriever/SQuAD R@20) all have gaps between granularities of ≤ 1.2 points, smaller than the CI width in Section 5.
+1. **Unsupervised retriever hưởng lợi nhiều nhất.** SimCSE tăng 9–16 điểm và giữ đủ thứ tự Prop > Sent > Pass ở 4/4 ô. Contriever giữ ở 3/4 ô; riêng SQuAD R@20 thì 3 granularity gần như bằng nhau (76.6–77.6).
+2. **Supervised retriever trên NQ: gần như không khác biệt.** DPR (train trên NQ) và GTR (fine-tune có NQ) có Δ trong khoảng ±2 điểm. Paper cũng ghi nhận điều này: *"all supervised retrievers demonstrate comparable performance across three levels of retrieval granularity in NQ, TQA, and WebQ"*, và giải thích là các retriever này đã được train trên cặp query–passage. Hai ô DPR/NQ mà proposition thua là **tái hiện đúng paper**, không phải lỗi.
+3. **Trên SQuAD, proposition thắng ở cả 4 retriever** (+6 đến +10 điểm ở R@5), kể cả với supervised retriever. Kết quả này khớp với lập luận của paper rằng proposition giúp retriever **generalize** tốt hơn sang phân phối câu hỏi khác.
+4. **Kết quả thô:** thứ tự đầy đủ giữ ở 11/16 ô (paper 14/16), proposition > passage ở 14/16 ô, dấu Δ trùng paper 16/16. 3 ô "mất" thứ tự so với paper (GTR/NQ ×2, Contriever/SQuAD R@20) đều có chênh lệch giữa các granularity ≤ 1.2 điểm, nhỏ hơn độ rộng CI ở mục 5.
 
-Secondary metrics point the same way: MRR@100 (`mrr.csv`) for SimCSE on NQ goes 26.7 → 35.0 → 41.1 (pass → sent → prop), and Recall@1 (`recall_all_k.csv`) for GTR on SQuAD goes 48.8 → 56.6 → 60.8.
+Các metric phụ ủng hộ cùng kết luận: MRR@100 (`mrr.csv`) với SimCSE NQ đi từ 26.7 → 35.0 → 41.1 (pass → sent → prop), và Recall@1 (`recall_all_k.csv`) với GTR SQuAD đi từ 48.8 → 56.6 → 60.8.
 
-## 3. Information density — Recall@l words (Figure 4/7)
+## 3. Mật độ thông tin — Recall@l words (Figure 4/7)
 
-Data: `recall_at_words.csv` · Figure:
+Số liệu: `recall_at_words.csv` · Hình:
 
 ![Recall@words](results/recall_at_words.png)
 
-This metric checks whether the answer appears within the **first l words** of the retrieved units. It is a fairer comparison than Recall@k, because the same word budget holds more propositions (11.5 words) than passages (62.5 words).
+Metric này đo việc câu trả lời có xuất hiện trong **l từ đầu tiên** của các unit được truy xuất hay không. Đây là phép so sánh công bằng hơn Recall@k, vì cùng một ngân sách từ thì chứa được nhiều proposition (11.5 từ) hơn passage (62.5 từ).
 
 | Retriever | Dataset | Passage @100 | Prop @100 | Δ | Passage @500 | Prop @500 | Δ |
 |---|---|---|---|---|---|---|---|
@@ -85,14 +85,14 @@ This metric checks whether the answer appears within the **first l words** of th
 | GTR | NQ | 55.0 | 63.0 | +8.0 | 76.4 | 76.4 | 0.0 |
 | GTR | SQuAD | 52.0 | 66.6 | +14.6 | 70.2 | 74.2 | +4.0 |
 
-- At **100 words**, proposition beats passage in **8/8** settings, including DPR/NQ (+2.0) and GTR/NQ (+8.0), where Recall@k showed no difference.
-- As the budget grows to **500 words**, the gap narrows (8/8 → 6/8 positive cells). This matches the paper's analysis: propositions help most under a small context budget, because every retrieved word is relevant to the question. Long passages carry extra, unrelated content, so they only "catch up" when the budget is large.
+- Ở **100 từ**, proposition hơn passage ở **8/8** cấu hình, kể cả DPR/NQ (+2.0) và GTR/NQ (+8.0), là những nơi Recall@k không thấy khác biệt.
+- Khi ngân sách tăng lên **500 từ**, khoảng cách thu hẹp (8/8 → 6/8 ô dương). Điều này khớp với phân tích của paper: proposition có lợi nhất khi ngân sách context nhỏ, vì mỗi từ được truy xuất đều liên quan tới câu hỏi. Passage dài chứa nhiều thông tin thừa, nên chỉ "đuổi kịp" khi ngân sách lớn.
 
-## 4. Downstream QA
+## 4. QA downstream
 
 ### 4.1 FiD T5-large — Table 4
 
-Data: `table4_fid_em.csv`, `table4_fid_mcnemar.csv`. For each granularity, the top-5/top-20 **passages** are fed to FiD, as in the paper.
+Số liệu: `table4_fid_em.csv`, `table4_fid_mcnemar.csv`. Với mỗi granularity, top-5/top-20 **passage** được đưa vào FiD, giống paper.
 
 | Retriever | Granularity | NQ top5 | NQ top20 | SQuAD top5 | SQuAD top20 |
 |---|---|---|---|---|---|
@@ -101,13 +101,13 @@ Data: `table4_fid_em.csv`, `table4_fid_mcnemar.csv`. For each granularity, the t
 | DPR | passage → prop | **50.8** → 48.4 | 52.8 → **53.6** | 31.0 → **35.8** | 38.0 → **42.4** |
 | GTR | passage → prop | 51.0 → **52.2** | **53.4** → 53.2 | 43.8 → **50.2** | 46.6 → **50.8** |
 
-- Proposition > passage in **13/16 cells**. The win is significant (McNemar) in 10/16 cells; no cell shows a significant loss.
-- Retrieval gains carry over to QA most clearly for SimCSE (+6 to +9 EM) and on SQuAD.
-- Same pattern as Table 3: DPR/NQ top5 is the only cell where proposition loses noticeably (−2.4, p = 0.096, not significant). The paper also reports −1.4 in this cell.
+- Proposition > passage ở **13/16 ô**. Thắng có ý nghĩa (McNemar) ở 10/16 ô; không có ô nào thua có ý nghĩa.
+- Cải thiện retrieval truyền sang QA rõ nhất với SimCSE (+6 đến +9 EM) và trên SQuAD.
+- Mẫu hình giống Table 3: DPR/NQ top5 là ô duy nhất proposition thua khá rõ (−2.4, p = 0.096, không có ý nghĩa). Paper cũng có −1.4 ở ô này.
 
 ### 4.2 LLaMA-2-7B 4-shot — Table 5
 
-Data: `table5_em.csv`, `qa_contains_answer.csv`. The context is truncated to a budget of 100 / 500 tokens.
+Số liệu: `table5_em.csv`, `qa_contains_answer.csv`. Context bị cắt theo ngân sách 100 / 500 token.
 
 | Retriever | Granularity | NQ @100 | NQ @500 | SQuAD @100 | SQuAD @500 |
 |---|---|---|---|---|---|
@@ -117,94 +117,94 @@ Data: `table5_em.csv`, `qa_contains_answer.csv`. The context is truncated to a b
 | GTR | passage → prop | 38.8 → **42.0** | **45.0** → 44.4 | 27.6 → **40.2** | 37.4 → **39.0** |
 | Closed-book | — | 25.8 | 25.8 | 14.6 | 14.6 |
 
-- **100-token budget:** proposition > passage in **7/8** cells. The advantage on SQuAD is large: +6.4 to +12.6 EM.
-- **500-token budget:** proposition > passage in 6/8 cells, with smaller gaps (SQuAD only +1.6 to +5.0). This agrees with Section 3: the smaller the budget, the more the information density of propositions matters.
-- The full ordering Prop > Sent > Pass holds in only 8/16 cells (paper 13/16). Sentence and proposition are usually close (< 2 EM apart), so with 500 questions their order easily flips due to noise.
-- Every retrieval-augmented setting beats closed-book: +6 to +20 EM on NQ, +6 to +26 EM on SQuAD.
+- **Ngân sách 100 token:** proposition > passage ở **7/8** ô. Lợi thế trên SQuAD rất lớn: +6.4 đến +12.6 EM.
+- **Ngân sách 500 token:** proposition > passage ở 6/8 ô, chênh lệch nhỏ hơn (SQuAD chỉ +1.6 đến +5.0). Kết quả này cùng chiều với mục 3: ngân sách càng nhỏ, mật độ thông tin của proposition càng có giá trị.
+- Thứ tự đầy đủ Prop > Sent > Pass chỉ giữ ở 8/16 ô (paper 13/16). Sentence và proposition thường sát nhau (chênh < 2 EM), nên với 500 câu hỏi, thứ tự giữa hai mức này dễ đảo do nhiễu.
+- Mọi cấu hình có retrieval đều vượt closed-book: +6 đến +20 EM trên NQ, +6 đến +26 EM trên SQuAD.
 
-## 5. Statistical tests
+## 5. Kiểm định thống kê
 
-The paper only reports mean scores. This replication adds two tests to check whether the differences are real or just noise from a 500-question sample.
+Paper chỉ báo cáo điểm trung bình. Bản replication bổ sung hai kiểm định để biết chênh lệch là thật hay chỉ là nhiễu do mẫu 500 câu.
 
-### 5.1 McNemar test (paired, same 500 questions)
+### 5.1 McNemar test (paired, cùng 500 câu hỏi)
 
-Data: `mcnemar_win_loss.csv` (Recall), `table4_fid_mcnemar.csv` (FiD EM). For each pair of granularities, we count questions where A is correct and B is wrong (*wins*) and vice versa (*losses*), then test whether wins ≠ losses is significant.
+Số liệu: `mcnemar_win_loss.csv` (Recall), `table4_fid_mcnemar.csv` (FiD EM). Với mỗi cặp granularity, đếm số câu A đúng – B sai (*wins*) và A sai – B đúng (*losses*), rồi kiểm định xem wins ≠ losses có ý nghĩa không.
 
-| Comparison (Recall@k) | Significant win | Not significant | Significant loss |
+| So sánh (Recall@k) | Thắng có ý nghĩa | Không có ý nghĩa | Thua có ý nghĩa |
 |---|---|---|---|
 | proposition vs passage | **11/16** | 5/16 | **0/16** |
 | sentence vs passage | 10/16 | 6/16 | 0/16 |
 | proposition vs sentence | 6/16 | 10/16 | 0/16 |
 
-Typical example (SimCSE, NQ, R@5): proposition correct – passage wrong on **109 questions**, the reverse on only **28 questions**, p < 0.0001.
+Ví dụ điển hình (SimCSE, NQ, R@5): proposition đúng – passage sai **109 câu**, ngược lại chỉ **28 câu**, p < 0.0001.
 
-The 5 non-significant cells are the 4 supervised-retriever cells on NQ (DPR, GTR) plus Contriever SQuAD R@20, which are exactly the small-Δ cells from Section 2. **No cell shows passage significantly better than proposition.**
+5 ô không có ý nghĩa gồm 4 ô supervised retriever trên NQ (DPR, GTR) và Contriever SQuAD R@20, cũng chính là các ô có Δ nhỏ ở mục 2. **Không có ô nào cho thấy passage tốt hơn proposition một cách có ý nghĩa thống kê.**
 
 ### 5.2 Bootstrap 95% CI
 
-Data: `bootstrap_ci.csv`. The CIs are roughly ±4 points wide (e.g. SimCSE NQ R@5: passage 39.0 [34.8, 43.2] vs proposition 55.2 [51.0, 59.6]). The two CIs **do not overlap** for SimCSE on NQ (both R@5 and R@20), but overlap almost completely for DPR/GTR on NQ. This explains why, with n = 500, differences below ~3 points are inconclusive.
+Số liệu: `bootstrap_ci.csv`. CI có độ rộng khoảng ±4 điểm (ví dụ SimCSE NQ R@5: passage 39.0 [34.8, 43.2] so với proposition 55.2 [51.0, 59.6]). Hai CI **không chồng nhau** với SimCSE trên NQ (cả R@5 và R@20), nhưng chồng nhau gần như hoàn toàn ở DPR/GTR trên NQ. Điều này giải thích vì sao với n = 500, chênh lệch dưới ~3 điểm không thể kết luận được.
 
-## 6. Further analysis
+## 6. Phân tích thêm
 
-### 6.1 Rare answers (long tail) — adapted Figure 3
+### 6.1 Câu trả lời hiếm (long-tail) — Figure 3 chuyển thể
 
-Data: `recall_by_answer_frequency.csv`, `recall_by_answer_frequency.png`. The paper uses entity frequency (EntityQuestions). Here we use **the number of corpus passages containing the answer** as a proxy.
+Số liệu: `recall_by_answer_frequency.csv`, `recall_by_answer_frequency.png`. Paper dùng tần suất entity (EntityQuestions). Ở đây dùng **số passage trong corpus chứa câu trả lời** làm proxy.
 
-| SimCSE, R@20 | answer appears 1–2 times | ≥ 30 times |
+| SimCSE, R@20 | answer xuất hiện 1–2 lần | ≥ 30 lần |
 |---|---|---|
 | NQ: passage → proposition | 53.7 → 76.5 (**+22.8**) | 76.7 → 84.7 (+8.0) |
 
-For SimCSE on NQ, the benefit of propositions is ~3× larger when the answer is rare. This is the effect the paper describes: *"retrieving by proposition shows a much larger advantage … with questions targeting less common entities"*. However, the effect is **not clear** for other retrievers and datasets (e.g. SimCSE/SQuAD: +11.5 vs +11.2), so we count it as only a **partial** reproduction. The "0" bin (~10% of questions) contains questions whose answer is not in the downscaled corpus, so Recall = 0 at every granularity.
+Với SimCSE trên NQ, lợi ích của proposition lớn gấp ~3 lần khi câu trả lời hiếm. Đây đúng là hiện tượng paper mô tả: *"retrieving by proposition shows a much larger advantage … with questions targeting less common entities"*. Tuy vậy, hiệu ứng này **không rõ** với các retriever và dataset khác (ví dụ SimCSE/SQuAD: +11.5 vs +11.2), nên chỉ xem là tái hiện **một phần**. Bin "0" (~10% câu) là các câu có answer không nằm trong corpus thu nhỏ, nên Recall = 0 ở mọi granularity.
 
-### 6.2 By question type
+### 6.2 Theo loại câu hỏi
 
-Data: `recall_by_question_type.csv` (R@20, averaged over 4 retrievers). Propositions help most on **narrow factoid** questions: *when* (SQuAD 65.0 → 75.0), *where* (66.1 → 74.2), *who* (NQ 72.8 → 79.2). *how/other* questions barely change. This makes sense: a proposition is "one atomic fact", so it matches questions that ask for exactly one fact.
+Số liệu: `recall_by_question_type.csv` (R@20, trung bình trên 4 retriever). Proposition giúp rõ nhất ở các câu hỏi **factoid hẹp**: *when* (SQuAD 65.0 → 75.0), *where* (66.1 → 74.2), *who* (NQ 72.8 → 79.2). Câu *how/other* gần như không đổi. Điều này hợp lý, vì proposition là "một fact tối giản" nên khớp tốt với câu hỏi hỏi đúng một fact.
 
 ### 6.3 Error analysis — Table 6/7
 
-Data: `error_cases_top1.csv`: 568 questions where the top-1 results of the 3 granularities disagree (Contriever + GTR).
+Số liệu: `error_cases_top1.csv`: 568 câu mà top-1 của 3 granularity cho kết quả khác nhau (Contriever + GTR).
 
-| Pattern (passage / sentence / proposition) | Questions |
+| Mẫu (passage / sentence / proposition) | Số câu |
 |---|---|
-| ✗✓✓ only passage wrong | 156 |
-| ✗✗✓ **only proposition correct** | 132 |
-| ✓✗✗ **only passage correct** | 82 |
-| ✓✓✗ only proposition wrong | 82 |
+| ✗✓✓ chỉ passage sai | 156 |
+| ✗✗✓ **chỉ proposition đúng** | 132 |
+| ✓✗✗ **chỉ passage đúng** | 82 |
+| ✓✓✗ chỉ proposition sai | 82 |
 | ✓✗✓ / ✗✓✗ | 61 / 55 |
 
-In total, proposition is correct while passage is wrong on **288 questions**, and passage is correct while proposition is wrong on **164 questions**.
+Tổng cộng proposition đúng – passage sai **288 câu**, passage đúng – proposition sai **164 câu**.
 
-Individual examples are available in `error_cases_top1.csv`.
+Ví dụ cụ thể từng câu xem trong `error_cases_top1.csv`.
 
-### 6.4 Index cost
+### 6.4 Chi phí index
 
-Data: `efficiency.csv`. Propositions produce **6.45×** as many units as passages. The fp16 index grows from 115 MB to 742 MB, and encoding time roughly doubles. The paper says little about this accuracy–cost trade-off, but it matters for real deployment: at 6M pages, it means 257M vectors instead of 41M.
+Số liệu: `efficiency.csv`. Proposition có số unit gấp **6.45 lần** passage. Index fp16 tăng từ 115 MB lên 742 MB, và thời gian encode tăng ~2×. Paper ít nhắc tới đánh đổi hiệu năng – chi phí này, nhưng đây là điểm quan trọng khi triển khai thật: ở quy mô 6M pages, con số là 257M vectors so với 41M.
 
-## 7. Why absolute numbers are higher than the paper
+## 7. Vì sao số tuyệt đối cao hơn paper
 
-For example, SimCSE NQ R@5 passage: ours 39.0, paper 28.8. GTR NQ R@5: ours 74.2, paper 66.3. FiD and LLaMA EM are also 5–15 points higher.
+Ví dụ SimCSE NQ R@5 passage: nhóm 39.0, paper 28.8. GTR NQ R@5: nhóm 74.2, paper 66.3. FiD và LLaMA EM cũng cao hơn 5–15 điểm.
 
-1. **Far fewer distractors:** 8,000 pages vs 6M (~0.13%). The retriever only has to separate gold pages from ~7.5k other pages instead of millions.
-2. **Gold pages make up a large share:** 32–35% of units come from gold pages (`corpus_stats.csv`). In full Wikipedia this share is close to zero.
-3. **Not a pipeline bug:** unit lengths match the paper (62.5 / 21.9 / 11.5 words vs 58.5 / 21.0 / 11.2), the FiD oracle sanity check reaches 57 EM, and most importantly the sign of Δ matches the paper in 16/16 Table 3 cells.
+1. **Ít distractor hơn rất nhiều:** 8,000 pages so với 6M (~0.13%). Retriever chỉ phải phân biệt gold với ~7.5k trang khác thay vì hàng triệu.
+2. **Gold pages chiếm tỉ lệ lớn:** 32–35% số unit đến từ gold pages (`corpus_stats.csv`). Trong Wikipedia đầy đủ, tỉ lệ này gần như bằng 0.
+3. **Không phải lỗi pipeline:** độ dài unit khớp paper (62.5 / 21.9 / 11.5 từ so với 58.5 / 21.0 / 11.2), sanity check oracle FiD đạt 57 EM, và quan trọng nhất là dấu của Δ trùng paper ở 16/16 ô Table 3.
 
-The report therefore draws conclusions only from the **relative trend between granularities**, not from absolute numbers.
+Vì vậy báo cáo chỉ dùng **xu hướng tương đối giữa các granularity** để kết luận, không dùng số tuyệt đối.
 
 ## 8. Limitations
 
-- **Small scale:** 500 questions per dataset, so CIs are about ±4 points wide and differences < 3 points are inconclusive (Section 5). The downscaled corpus makes the task easier than in reality, which may underestimate the advantage of propositions. The paper argues this advantage grows with more distractors, but we could not verify it.
-- **Only 2/5 datasets** (NQ, SQuAD). No TQA, WebQ or EntityQuestions, so Figure 3 is only adapted through an answer-frequency proxy, and the paper's "Avg" column cannot be compared directly.
-- **Wikipedia version mismatch:** SQuAD (2016) and NQ (2018) vs FactoidWiki (2021). ~6–7% of gold titles do not match, and ~10% of answers are no longer in the corpus.
-- **Distractors** are drawn only from the 367 shards containing gold pages, so they may not represent Wikipedia as a whole.
-- **DPR-multiset has seen the NQ and SQuAD train splits** (seen distribution). The paper has the same issue: it treats SQuAD as "unseen" even though DPR was fine-tuned on SQuAD.
-- **FiD** uses the original checkpoint loaded into a newer transformers version (the original code requires transformers 3.0.2), so small deviations are possible.
-- **We did not run the Propositionizer ourselves:** we used the authors' propositions, so we cannot assess the quality or errors of the proposition extraction step (Fig 5).
+- **Quy mô nhỏ:** 500 câu/dataset, nên CI có độ rộng khoảng ±4 điểm và chênh lệch < 3 điểm không thể kết luận (mục 5). Corpus thu nhỏ làm bài toán dễ hơn thực tế, nên có thể đánh giá thấp lợi thế của proposition. Paper lập luận lợi thế này lớn hơn khi có nhiều distractor, nhưng nhóm chưa kiểm chứng được.
+- **Chỉ 2/5 dataset** (NQ, SQuAD). Không có TQA, WebQ, EntityQuestions, nên Figure 3 chỉ được chuyển thể bằng proxy tần suất answer, và cột "Avg" của paper không so trực tiếp được.
+- **Lệch phiên bản Wikipedia:** SQuAD (2016) và NQ (2018) so với FactoidWiki (2021). ~6–7% gold title không match, ~10% answer không còn trong corpus.
+- **Distractor** chỉ lấy từ 367 shard chứa gold page, nên có thể không đại diện cho toàn bộ Wikipedia.
+- **DPR-multiset đã thấy train split của NQ và SQuAD** (seen distribution). Paper cũng có vấn đề này: coi SQuAD là "unseen" dù DPR đã fine-tune trên SQuAD.
+- **FiD** dùng checkpoint gốc nạp vào transformers mới (code gốc cần transformers 3.0.2), nên có thể lệch nhỏ.
+- **Không tự chạy Propositionizer:** dùng sẵn proposition của tác giả, nên không đánh giá được chất lượng hay lỗi của bước tách proposition (Fig 5).
 
-## 9. Conclusion
+## 9. Kết luận
 
-On a downscaled 8,000-page corpus, this replication **reproduces the main trend** of Dense X Retrieval:
+Trên corpus thu nhỏ 8,000 pages, bản replication **tái hiện được xu hướng chính** của Dense X Retrieval:
 
-- Proposition ≥ passage in most retrieval settings (14/16) and QA settings (13/16 FiD, 13/16 LLaMA), with no case of passage winning significantly.
-- The benefit is concentrated on **unsupervised retrievers**, **unseen data (SQuAD)**, **small context budgets** and **rare answers**. For supervised retrievers on NQ, the three granularities are roughly equal, as in the paper.
+- Proposition ≥ passage ở hầu hết cấu hình retrieval (14/16) và QA (13/16 FiD, 13/16 LLaMA), không có trường hợp nào passage thắng có ý nghĩa thống kê.
+- Lợi ích tập trung ở **unsupervised retriever**, **dữ liệu chưa thấy (SQuAD)**, **ngân sách context nhỏ** và **câu trả lời hiếm**. Với supervised retriever trên NQ, ba granularity gần như ngang nhau, đúng như paper.
 
-The full ordering Proposition > Sentence > Passage **does not hold in every cell** (11/16 retrieval, 12/16 FiD, 8/16 LLaMA). This is mainly because sentence and proposition are close, and their gap falls within the noise margin of a 500-question sample.
+Thứ tự đầy đủ Proposition > Sentence > Passage **không đúng ở mọi ô** (11/16 retrieval, 12/16 FiD, 8/16 LLaMA), chủ yếu do sentence và proposition sát nhau, chênh lệch nằm trong biên nhiễu của mẫu 500 câu.

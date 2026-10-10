@@ -21,3 +21,7 @@ Kiểm chứng **xu hướng tương đối** Proposition > Sentence > Passage t
 ## Plan
 
 Xem [PLAN.md](PLAN.md).
+
+## Results
+
+See [REPORT.md](REPORT.md). Comparison with the paper's numbers: `python analysis/compare_with_paper.py`.

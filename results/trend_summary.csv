@@ -1,0 +1,10 @@
+table,dataset,cells,ours Prop>Sent>Pass,paper Prop>Sent>Pass,ours Prop>Pass,same sign Δ as paper
+table3,NQ,8,4,6,6,8
+table3,SQUAD,8,7,8,8,8
+table4,NQ,8,5,4,6,6
+table4,SQUAD,8,7,8,7,7
+table5,NQ,8,3,5,5,6
+table5,SQUAD,8,5,8,8,8
+table3,ALL,16,11,14,14,16
+table4,ALL,16,12,12,13,13
+table5,ALL,16,8,13,13,14

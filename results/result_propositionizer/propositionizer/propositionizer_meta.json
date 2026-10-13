@@ -1,0 +1,44 @@
+{
+ "train_shards": [
+  "docs-0654_of_1000.jsonl",
+  "docs-0114_of_1000.jsonl",
+  "docs-0025_of_1000.jsonl",
+  "docs-0759_of_1000.jsonl",
+  "docs-0281_of_1000.jsonl",
+  "docs-0250_of_1000.jsonl",
+  "docs-0228_of_1000.jsonl",
+  "docs-0142_of_1000.jsonl",
+  "docs-0754_of_1000.jsonl",
+  "docs-0104_of_1000.jsonl",
+  "docs-0692_of_1000.jsonl",
+  "docs-0758_of_1000.jsonl",
+  "docs-0913_of_1000.jsonl",
+  "docs-0558_of_1000.jsonl",
+  "docs-0089_of_1000.jsonl",
+  "docs-0604_of_1000.jsonl",
+  "docs-0432_of_1000.jsonl",
+  "docs-0032_of_1000.jsonl",
+  "docs-0030_of_1000.jsonl",
+  "docs-0095_of_1000.jsonl",
+  "docs-0223_of_1000.jsonl",
+  "docs-0238_of_1000.jsonl",
+  "docs-0517_of_1000.jsonl",
+  "docs-0616_of_1000.jsonl"
+ ],
+ "dev_shards": [
+  "docs-0027_of_1000.jsonl",
+  "docs-0574_of_1000.jsonl",
+  "docs-0203_of_1000.jsonl",
+  "docs-0733_of_1000.jsonl"
+ ],
+ "n_train_pool": 6477,
+ "n_dev": 1000,
+ "page_overlap": 0,
+ "config": {
+  "LR": 0.0001,
+  "WD": 0.0001,
+  "EPOCHS": 3,
+  "EFF_BATCH": 64,
+  "SEED": 42
+ }
+}

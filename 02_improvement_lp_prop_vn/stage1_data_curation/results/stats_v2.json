@@ -1,0 +1,49 @@
+{
+ "articles_in": 9715,
+ "articles_kept": 7391,
+ "articles_eval": 6468,
+ "docs_kept": 107,
+ "removed": {
+  "draft": 2316,
+  "heading_only": 5,
+  "duplicate": 3
+ },
+ "duplicate_of": {
+  "a3701": "a2365",
+  "a3703": "a2366",
+  "a8494": "a4033"
+ },
+ "passages": 12425,
+ "passages_new": 57,
+ "articles_with_new_passages": 56,
+ "gold_spans": 3562,
+ "gold_spans_eval": 3063,
+ "qa_generic": 22173,
+ "props": {
+  "std": {
+   "articles": 7391,
+   "props": 57641,
+   "pointers": 0
+  },
+  "lp": {
+   "articles": 7391,
+   "props": 57320,
+   "pointers": 19448
+  },
+  "std_raw": {
+   "articles": 7391,
+   "props": 57433,
+   "pointers": 0
+  },
+  "lp_raw": {
+   "articles": 7391,
+   "props": 57004,
+   "pointers": 28512
+  },
+  "lp_edge_only": {
+   "articles": 7391,
+   "props": 57004,
+   "pointers": 19448
+  }
+ }
+}

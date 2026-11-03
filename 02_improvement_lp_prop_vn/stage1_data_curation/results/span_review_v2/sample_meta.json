@@ -1,0 +1,20 @@
+{
+ "seed": 2026,
+ "quota": {
+  "VỚI_ĐIỀU_KIỆN": 55,
+  "TRỪ_TRƯỜNG_HỢP": 25,
+  "NHƯNG_PHẢI": 15,
+  "KHÔNG_ÁP_DỤNG": 5
+ },
+ "max_per_doc": 4,
+ "n": 100,
+ "pool_eval_spans": 3063,
+ "picked_by_type": {
+  "TRỪ_TRƯỜNG_HỢP": 25,
+  "VỚI_ĐIỀU_KIỆN": 55,
+  "KHÔNG_ÁP_DỤNG": 5,
+  "NHƯNG_PHẢI": 15
+ },
+ "n_docs": 51,
+ "n_articles": 100
+}

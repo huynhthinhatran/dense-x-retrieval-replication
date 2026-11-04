@@ -1,0 +1,27 @@
+{
+ "candidates": 2400,
+ "generated": 2400,
+ "valid": 1909,
+ "selected": 1200,
+ "pass_rate": 0.7954,
+ "fail_counts": {
+  "ignored_differs": 133,
+  "q_form": 37,
+  "cond_in_answer": 207,
+  "no_copy": 144,
+  "rule_in_answer": 21,
+  "json_ok": 4,
+  "short_answer": 3
+ },
+ "selected_types": {
+  "VỚI_ĐIỀU_KIỆN": 937,
+  "TRỪ_TRƯỜNG_HỢP": 210,
+  "NHƯNG_PHẢI": 49,
+  "KHÔNG_ÁP_DỤNG": 4
+ },
+ "selected_rounds": {
+  "0": 1200
+ },
+ "selected_articles": 1200,
+ "target_met": true
+}

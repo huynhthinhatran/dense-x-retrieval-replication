@@ -26,7 +26,7 @@ To verify the relative empirical trend **Proposition > Sentence > Passage** acro
 │   └── scan_logic_errors.py                  # Scanning logical edge cases in English propositions
 └── results/
     ├── 01_run1_retrieval_fid/                # Retrieval recall, MRR, latency, bootstrap CI
-    ├── 02_run2_qa_llama/                     # Downstream QA evaluation (Llama-3, EM)
+    ├── 02_run2_qa_llama/                     # Downstream QA evaluation (LLaMA-2-7B, EM)
     ├── 03_train_propositionizer/             # Loss curves and quality checks for propositionizer
     ├── 04_logic_error_analysis/              # Detailed breakdown of logic failure modes
     └── 05_corpus_meta_stats/                 # Statistics on FactoidWiki subset

@@ -1,0 +1,475 @@
+{
+ "split": "eval",
+ "setup": {
+  "n_cond": 1200,
+  "n_cond_on_dup_articles": 0,
+  "n_generic": 19404,
+  "n_generic_dropped": 0,
+  "dup_groups": 0,
+  "k": 5,
+  "paths": {
+   "articles": "/kaggle/input/notebooks/thnhtranhuynh/lp-prop-q/data_v2/articles_v2.jsonl",
+   "cond": "/kaggle/input/notebooks/thnhtranhuynh/lp-prop-q/questions_v2/cond_questions_v2_eval_1200.jsonl",
+   "generic": "/kaggle/input/notebooks/thnhtranhuynh/lp-prop-q/data_v2/qa_generic.jsonl",
+   "gold": "/kaggle/input/notebooks/thnhtranhuynh/lp-prop-q/data_v2/gold_spans.jsonl",
+   "passages": "/kaggle/input/notebooks/thnhtranhuynh/lp-prop-q/data_v2/passages.jsonl"
+  }
+ },
+ "tier1": {
+  "std_raw": {
+   "n_spans": 3063,
+   "ConditionDropRate": 0.059418870388507995,
+   "UnconditionalRuleRate": 0.031668299053215804,
+   "PointerRetention": 0.8632060071825008,
+   "props_per_article": 7.730210265924551,
+   "words_per_prop": 30.7257545150903,
+   "pointers_per_article": 0.0
+  },
+  "std": {
+   "n_spans": 3063,
+   "ConditionDropRate": 0.02220045706823376,
+   "UnconditionalRuleRate": 0.02220045706823376,
+   "PointerRetention": 0.910218739797584,
+   "props_per_article": 7.758967223252937,
+   "words_per_prop": 30.79290624688652,
+   "pointers_per_article": 0.0
+  },
+  "lp_raw": {
+   "n_spans": 3063,
+   "ConditionDropRate": 0.07672216780933726,
+   "UnconditionalRuleRate": 0.053215801501795626,
+   "PointerRetention": 0.8592882794645772,
+   "props_per_article": 7.67547928262214,
+   "words_per_prop": 29.0134958203243,
+   "pointers_per_article": 3.8562152133580705
+  },
+  "lp_edge_only": {
+   "n_spans": 3063,
+   "ConditionDropRate": 0.07672216780933726,
+   "UnconditionalRuleRate": 0.053215801501795626,
+   "PointerRetention": 0.8648383937316356,
+   "props_per_article": 7.67547928262214,
+   "words_per_prop": 29.0134958203243,
+   "pointers_per_article": 2.6196660482374767
+  },
+  "lp": {
+   "n_spans": 3063,
+   "ConditionDropRate": 0.0326477309826967,
+   "UnconditionalRuleRate": 0.0326477309826967,
+   "PointerRetention": 0.9174012406137774,
+   "props_per_article": 7.7187693259121835,
+   "words_per_prop": 29.15098647971958,
+   "pointers_per_article": 2.6196660482374767
+  }
+ },
+ "tier2": {
+  "passage": {
+   "Recall@5_cond": 0.8966666666666666,
+   "Recall@5_cond_strict": 0.8966666666666666,
+   "Recall@5_generic": 0.8876520305091734,
+   "Recall@5_generic_strict": 0.8876520305091734,
+   "MRR@5_generic": 0.7442236995808424,
+   "n_cond_ranked": 1200,
+   "n_generic_ranked": 19404,
+   "CCR@B100": 0.5141666666666667,
+   "Orphan@B100": 0.0775,
+   "HeadRecall@B100": 0.5916666666666667,
+   "n_ctx@B100": 1200,
+   "CCR@B500": 0.8333333333333334,
+   "Orphan@B500": 0.014166666666666666,
+   "HeadRecall@B500": 0.8475,
+   "n_ctx@B500": 1200
+  },
+  "std_raw": {
+   "Recall@5_cond": 0.9516666666666667,
+   "Recall@5_cond_strict": 0.9516666666666667,
+   "Recall@5_generic": 0.8762110904968048,
+   "Recall@5_generic_strict": 0.8762110904968048,
+   "MRR@5_generic": 0.7151489383632241,
+   "n_cond_ranked": 1200,
+   "n_generic_ranked": 19404,
+   "CCR@B100": 0.7008333333333333,
+   "Orphan@B100": 0.12583333333333332,
+   "HeadRecall@B100": 0.8266666666666667,
+   "n_ctx@B100": 1200,
+   "CCR@B500": 0.8375,
+   "Orphan@B500": 0.09416666666666666,
+   "HeadRecall@B500": 0.9316666666666666,
+   "n_ctx@B500": 1200
+  },
+  "std": {
+   "Recall@5_cond": 0.9608333333333333,
+   "Recall@5_cond_strict": 0.9608333333333333,
+   "Recall@5_generic": 0.8769325912183055,
+   "Recall@5_generic_strict": 0.8769325912183055,
+   "MRR@5_generic": 0.71597866419295,
+   "n_cond_ranked": 1200,
+   "n_generic_ranked": 19404,
+   "CCR@B100": 0.725,
+   "Orphan@B100": 0.1125,
+   "HeadRecall@B100": 0.8375,
+   "n_ctx@B100": 1200,
+   "CCR@B500": 0.8691666666666666,
+   "Orphan@B500": 0.07833333333333334,
+   "HeadRecall@B500": 0.9475,
+   "n_ctx@B500": 1200
+  },
+  "lp_noptr": {
+   "Recall@5_cond": 0.9533333333333334,
+   "Recall@5_cond_strict": 0.9533333333333334,
+   "Recall@5_generic": 0.8649247577819006,
+   "Recall@5_generic_strict": 0.8649247577819006,
+   "MRR@5_generic": 0.7000403696832268,
+   "n_cond_ranked": 1200,
+   "n_generic_ranked": 19404,
+   "CCR@B100": 0.6908333333333333,
+   "Orphan@B100": 0.15666666666666668,
+   "HeadRecall@B100": 0.8475,
+   "n_ctx@B100": 1200,
+   "CCR@B500": 0.8358333333333333,
+   "Orphan@B500": 0.10666666666666667,
+   "HeadRecall@B500": 0.9425,
+   "n_ctx@B500": 1200
+  },
+  "lp_out": {
+   "Recall@5_cond": 0.9533333333333334,
+   "Recall@5_cond_strict": 0.9533333333333334,
+   "Recall@5_generic": 0.8649247577819006,
+   "Recall@5_generic_strict": 0.8649247577819006,
+   "MRR@5_generic": 0.7000403696832268,
+   "n_cond_ranked": 1200,
+   "n_generic_ranked": 19404,
+   "CCR@B100": 0.7425,
+   "Orphan@B100": 0.09333333333333334,
+   "HeadRecall@B100": 0.8358333333333333,
+   "n_ctx@B100": 1200,
+   "CCR@B500": 0.8858333333333334,
+   "Orphan@B500": 0.059166666666666666,
+   "HeadRecall@B500": 0.945,
+   "n_ctx@B500": 1200
+  },
+  "lp_raw": {
+   "Recall@5_cond": 0.9433333333333334,
+   "Recall@5_cond_strict": 0.9433333333333334,
+   "Recall@5_generic": 0.8642032570603999,
+   "Recall@5_generic_strict": 0.8642032570603999,
+   "MRR@5_generic": 0.6991445062873635,
+   "n_cond_ranked": 1200,
+   "n_generic_ranked": 19404,
+   "CCR@B100": 0.6525,
+   "Orphan@B100": 0.10833333333333334,
+   "HeadRecall@B100": 0.7608333333333334,
+   "n_ctx@B100": 1200,
+   "CCR@B500": 0.8541666666666666,
+   "Orphan@B500": 0.0675,
+   "HeadRecall@B500": 0.9216666666666666,
+   "n_ctx@B500": 1200
+  },
+  "lp_edge_only": {
+   "Recall@5_cond": 0.9433333333333334,
+   "Recall@5_cond_strict": 0.9433333333333334,
+   "Recall@5_generic": 0.8642032570603999,
+   "Recall@5_generic_strict": 0.8642032570603999,
+   "MRR@5_generic": 0.6991445062873635,
+   "n_cond_ranked": 1200,
+   "n_generic_ranked": 19404,
+   "CCR@B100": 0.6625,
+   "Orphan@B100": 0.1075,
+   "HeadRecall@B100": 0.77,
+   "n_ctx@B100": 1200,
+   "CCR@B500": 0.8633333333333333,
+   "Orphan@B500": 0.06583333333333333,
+   "HeadRecall@B500": 0.9291666666666667,
+   "n_ctx@B500": 1200
+  },
+  "lp": {
+   "Recall@5_cond": 0.9533333333333334,
+   "Recall@5_cond_strict": 0.9533333333333334,
+   "Recall@5_generic": 0.8649247577819006,
+   "Recall@5_generic_strict": 0.8649247577819006,
+   "MRR@5_generic": 0.7000403696832268,
+   "n_cond_ranked": 1200,
+   "n_generic_ranked": 19404,
+   "CCR@B100": 0.6933333333333334,
+   "Orphan@B100": 0.095,
+   "HeadRecall@B100": 0.7883333333333333,
+   "n_ctx@B100": 1200,
+   "CCR@B500": 0.8925,
+   "Orphan@B500": 0.051666666666666666,
+   "HeadRecall@B500": 0.9441666666666667,
+   "n_ctx@B500": 1200
+  }
+ },
+ "significance": {
+  "Recall@5_cond: lp - passage": {
+   "diff": 0.056666666666666664,
+   "ci95": [
+    0.03833333333333333,
+    0.07666666666666666
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Recall@5_cond: lp - std": {
+   "diff": -0.0075,
+   "ci95": [
+    -0.0175,
+    0.0016666666666666668
+   ],
+   "n": 1200,
+   "significant": false
+  },
+  "Recall@5_cond: lp - lp_noptr": {
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "n": 1200,
+   "significant": false
+  },
+  "Recall@5_cond: lp - lp_out": {
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "n": 1200,
+   "significant": false
+  },
+  "Recall@5_cond: lp - lp_raw": {
+   "diff": 0.01,
+   "ci95": [
+    0.004166666666666667,
+    0.015833333333333335
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Recall@5_cond: lp - lp_edge_only": {
+   "diff": 0.01,
+   "ci95": [
+    0.004166666666666667,
+    0.015833333333333335
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "CCR@B100: lp - passage": {
+   "diff": 0.17916666666666667,
+   "ci95": [
+    0.14333333333333334,
+    0.21083333333333334
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "CCR@B100: lp - std": {
+   "diff": -0.03166666666666667,
+   "ci95": [
+    -0.059166666666666666,
+    -0.005833333333333334
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "CCR@B100: lp - lp_noptr": {
+   "diff": 0.0025,
+   "ci95": [
+    -0.02,
+    0.02666666666666667
+   ],
+   "n": 1200,
+   "significant": false
+  },
+  "CCR@B100: lp - lp_out": {
+   "diff": -0.049166666666666664,
+   "ci95": [
+    -0.06416666666666666,
+    -0.034166666666666665
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "CCR@B100: lp - lp_raw": {
+   "diff": 0.04083333333333333,
+   "ci95": [
+    0.024166666666666666,
+    0.056666666666666664
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "CCR@B100: lp - lp_edge_only": {
+   "diff": 0.030833333333333334,
+   "ci95": [
+    0.021666666666666667,
+    0.04083333333333333
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Orphan@B100: lp - passage": {
+   "diff": 0.0175,
+   "ci95": [
+    -0.0033333333333333335,
+    0.04
+   ],
+   "n": 1200,
+   "significant": false
+  },
+  "Orphan@B100: lp - std": {
+   "diff": -0.0175,
+   "ci95": [
+    -0.03833333333333333,
+    0.004166666666666667
+   ],
+   "n": 1200,
+   "significant": false
+  },
+  "Orphan@B100: lp - lp_noptr": {
+   "diff": -0.06166666666666667,
+   "ci95": [
+    -0.08,
+    -0.0425
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Orphan@B100: lp - lp_out": {
+   "diff": 0.0016666666666666668,
+   "ci95": [
+    -0.01,
+    0.015
+   ],
+   "n": 1200,
+   "significant": false
+  },
+  "Orphan@B100: lp - lp_raw": {
+   "diff": -0.013333333333333334,
+   "ci95": [
+    -0.025833333333333333,
+    -0.0008333333333333334
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Orphan@B100: lp - lp_edge_only": {
+   "diff": -0.0125,
+   "ci95": [
+    -0.018333333333333333,
+    -0.006666666666666667
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "CCR@B500: lp - passage": {
+   "diff": 0.059166666666666666,
+   "ci95": [
+    0.0325,
+    0.085
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "CCR@B500: lp - std": {
+   "diff": 0.023333333333333334,
+   "ci95": [
+    0.0025,
+    0.04416666666666667
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "CCR@B500: lp - lp_noptr": {
+   "diff": 0.056666666666666664,
+   "ci95": [
+    0.04083333333333333,
+    0.0725
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "CCR@B500: lp - lp_out": {
+   "diff": 0.006666666666666667,
+   "ci95": [
+    -0.0016666666666666668,
+    0.015
+   ],
+   "n": 1200,
+   "significant": false
+  },
+  "CCR@B500: lp - lp_raw": {
+   "diff": 0.03833333333333333,
+   "ci95": [
+    0.025833333333333333,
+    0.050833333333333335
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "CCR@B500: lp - lp_edge_only": {
+   "diff": 0.029166666666666667,
+   "ci95": [
+    0.02,
+    0.03833333333333333
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Orphan@B500: lp - passage": {
+   "diff": 0.0375,
+   "ci95": [
+    0.024166666666666666,
+    0.0525
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Orphan@B500: lp - std": {
+   "diff": -0.02666666666666667,
+   "ci95": [
+    -0.043333333333333335,
+    -0.008333333333333333
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Orphan@B500: lp - lp_noptr": {
+   "diff": -0.055,
+   "ci95": [
+    -0.06916666666666667,
+    -0.041666666666666664
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Orphan@B500: lp - lp_out": {
+   "diff": -0.0075,
+   "ci95": [
+    -0.015,
+    -0.0008333333333333334
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Orphan@B500: lp - lp_raw": {
+   "diff": -0.015833333333333335,
+   "ci95": [
+    -0.025,
+    -0.006666666666666667
+   ],
+   "n": 1200,
+   "significant": true
+  },
+  "Orphan@B500: lp - lp_edge_only": {
+   "diff": -0.014166666666666666,
+   "ci95": [
+    -0.021666666666666667,
+    -0.0075
+   ],
+   "n": 1200,
+   "significant": true
+  }
+ }
+}

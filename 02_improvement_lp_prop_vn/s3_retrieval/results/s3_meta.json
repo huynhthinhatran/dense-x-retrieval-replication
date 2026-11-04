@@ -1,0 +1,21 @@
+{
+ "n_cond": 1200,
+ "n_generic": 19404,
+ "units": {
+  "passage": 12425,
+  "std": 57641,
+  "lp": 57320,
+  "std_raw": 57433,
+  "lp_raw": 57004,
+  "lp_edge_only": 57004
+ },
+ "emb": {
+  "passage": "không thấy file cũ -> embed lại toàn bộ",
+  "std": "không thấy file cũ -> embed lại toàn bộ",
+  "lp": "không thấy file cũ -> embed lại toàn bộ",
+  "std_raw": "không thấy file cũ -> embed lại toàn bộ",
+  "lp_raw": "không thấy file cũ -> embed lại toàn bộ",
+  "lp_edge_only": "không thấy file cũ -> embed lại toàn bộ"
+ },
+ "minutes": 13.2
+}

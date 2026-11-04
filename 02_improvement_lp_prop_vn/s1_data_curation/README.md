@@ -9,7 +9,8 @@ Owner: Trinh Ngoc Thao Hien
 ## Results
 * `results/stats_v2.json`: 9,715 → 7,391 articles (2,316 drafts, 5 heading fragments, 3 duplicates removed), 107 statutes, 12,425 passages, 3,063 eval gold spans, 22,173 generic QA.
 * `results/s1_clean.log`: run log on Kaggle.
-* `results/span_review_v2/`: the audit sample (`sample_meta.json`) and labels.
+* `results/span_review_v2/`: the audit sample (`sample_meta.json`) and labels (`span_review_v2_labels.csv`).
+* Note on generic QA: `stats_v2.json` records 22,173 generic QA across all kept articles (eval + dev); the 19,404 questions on the eval split are used for retrieval evaluation in paper §3.3 & Table 4.
 
 ## Split
 Statute-level: eval 93 statutes / 6,468 articles; dev 14 statutes / 923 articles. No statute is in both splits.

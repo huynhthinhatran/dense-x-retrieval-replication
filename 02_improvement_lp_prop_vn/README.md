@@ -19,7 +19,6 @@ Dense retrieval over Vietnamese legal texts faces severe domain-specific hurdles
 ```text
 02_improvement_lp_prop_vn/
 ├── docs/                                     # Theoretical foundations, legal analysis, experimental design
-│   ├── LP_Prop_Mathematical_Foundations_and_Literature_Review.md
 │   └── LP_Prop_Experimental_Plan.md
 ├── exploration_notebooks/                    # Initial prototyping and logic audits
 ├── stage1_data_curation/                     # [Stage 1] Corpus cleaning, draft filtering & human audit (Lead: Hiền)

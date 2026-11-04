@@ -1,40 +1,38 @@
-# Dense X Retrieval Replication & LP-Prop Vietnamese Legal Extension
+# Dense X Retrieval Replication and LP-Prop for Vietnamese Legal QA
 
-This repository contains two interconnected research tracks:
-1. **Part 1 — Replication:** Downscaled replication of the EMNLP 2024 paper *Dense X Retrieval: What Retrieval Granularity Should We Use?* on English Wikipedia (SQuAD / NQ).
-2. **Part 2 — Improvement (LP-Prop):** Domain expansion introducing **Logic-Preserving Proposition Retrieval (LP-Prop)** for condition-sensitive Vietnamese legal QA on the curated **LegalCond-7.4K** benchmark.
+Course project for SEG301 (Search Engines), FPT University Da Nang. The repository has two parts:
 
----
+1. **Part 1, replication** (`01_replication_densex_en/`): a downscaled replication of *Dense X Retrieval: What Retrieval Granularity Should We Use?* (Chen et al., EMNLP 2024) on English Wikipedia.
+2. **Part 2, LP-Prop** (`02_improvement_lp_prop_vn/`): logic-preserving propositions with condition pointers for condition-sensitive Vietnamese legal QA, evaluated on the LegalCond-7.4K benchmark. This is the code for the paper *LP-Prop: Logic-Preserving Proposition Retrieval and Verification for Condition-Sensitive Vietnamese Legal Question Answering*.
 
-## 📂 Repository Organization
+## Repository layout
 
 ```text
 dense-x-retrieval-replication/
-├── 01_replication_densex_en/        # [PART 1] English Wikipedia Replication (Dense X, EMNLP 2024)
-│   ├── notebooks/                   # Replication retrieval, QA evaluation, and propositionizer training
-│   ├── analysis/                    # Script verification vs. paper figures & scan logic errors
-│   ├── results/                     # All empirical replication artifacts across 5 structured subdirectories
-│   ├── PLAN.md                      # Original replication plan
-│   ├── REPORT.md                    # Detailed replication report & analysis
-│   └── README.md                    # Replication overview & documentation
-│
-└── 02_improvement_lp_prop_vn/       # [PART 2] Vietnamese Legal Domain Innovation (LP-Prop)
-    ├── docs/                        # Mathematical foundations, literature review, and experimental design
-    ├── exploration_notebooks/       # Prototyping and early logic error exploration
-    ├── stage1_data_curation/        # Stage 1: Corpus cleaning, draft filtering, and human verification
-    ├── stage2_zero_leakage_split/   # Stage 2: Zero-leakage document-level statute split
-    ├── stage3_retrieval_benchmark/  # Stage 3: Multi-granularity retrieval evaluation
-    ├── stage4_generator_qa/         # Stage 4: Downstream condition-preserving QA evaluation
-    └── README.md                    # LP-Prop framework overview & team responsibilities
+├── 01_replication_densex_en/        # Part 1: Dense X replication (English Wikipedia)
+│   ├── notebooks/                   # retrieval + QA runs, propositionizer training
+│   ├── analysis/                    # comparison with the original paper, logic-error scan
+│   ├── results/                     # results of the replication runs
+│   ├── PLAN.md, REPORT.md           # plan and report (in Vietnamese)
+│   └── README.md
+└── 02_improvement_lp_prop_vn/       # Part 2: LP-Prop (code of the paper)
+    ├── s1_data_curation/            # S1  corpus cleaning, split, span audit
+    ├── s1b_question_generation/     # S1b conditional question generation
+    ├── s2_propositionizer/          # S2  propositions, pointers, refinement
+    ├── s3_retrieval/                # S3  BGE-M3 retrieval and fill_budget
+    ├── s5_reader_judge/             # S5  reader, LLM judge, Tier 3
+    ├── s6_evaluation/               # S6  Tier 1, Tier 2, bootstrap
+    ├── notebooks/                   # Kaggle notebooks that run the pipeline
+    └── README.md
 ```
 
----
+See [`02_improvement_lp_prop_vn/README.md`](02_improvement_lp_prop_vn/README.md) for the pipeline, results and how to reproduce them.
 
-## 👥 Authors & Affiliations
+## Authors
 
-* **Trịnh Ngọc Thảo Hiền** (`Data & Benchmark Lead` — `HienTNTDE201096@fpt.edu.vn`)
-* **Nguyễn Gia Bảo** (`Model & Propositionizer Lead` — `BaoNGDE200924@fpt.edu.vn`)
-* **Huỳnh Thị Nhã Trân** (`QA Evaluation & System Integration Lead` — `TranHTNDE200845@fpt.edu.vn`)
-* **Advisor:** Thầy **Bùi Cao Vũ** (`vubc@fpt.edu.vn`)
+* **Huynh Thi Nha Tran** (Huỳnh Thị Nhã Trân), `TranHTNDE200631@fpt.edu.vn`: conditional questions, reader and judge (Tier 3), case studies, manuscript.
+* **Nguyen Huu Gia Bao** (Nguyễn Hữu Gia Bảo), `BaoNHGDE200456@fpt.edu.vn`: LP-Prop representation, propositionizer and refinement, retrieval and pointer expansion, Tier 1–2.
+* **Trinh Ngoc Thao Hien** (Trịnh Ngọc Thảo Hiền), `HienTNTDE201096@fpt.edu.vn`: corpus curation, split, gold condition spans and span audit.
+* **Supervisor:** Bui Cao Vu (Bùi Cao Vũ), `vubc@fpt.edu.vn`.
 
-*Department of Artificial Intelligence, FPT University Da Nang Campus*
+Department of Artificial Intelligence, FPT University, Da Nang, Vietnam.

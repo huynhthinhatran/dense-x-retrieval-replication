@@ -1,0 +1,56 @@
+[input] {
+ "articles": "/kaggle/input/datasets/thohintrnhngc/lp-prop-work-d1/articles_all.jsonl",
+ "gold": "/kaggle/input/datasets/thohintrnhngc/lp-prop-work-d1/gold_spans.jsonl",
+ "passages": "/kaggle/input/datasets/thohintrnhngc/lp-prop-work-d1/passages.jsonl",
+ "generic": "/kaggle/input/datasets/thohintrnhngc/lp-prop-work-d1/qa_generic.jsonl",
+ "s2_worker": "/kaggle/input/datasets/khhanhlinh/lp-prop-pipeline-s2/s2_worker.py",
+ "props_std": "/kaggle/input/datasets/khhanhlinh/lp-prop-pipeline-s2/work_clean/props_std.jsonl",
+ "props_lp": "/kaggle/input/datasets/khhanhlinh/lp-prop-pipeline-s2/work_clean/props_lp.jsonl",
+ "props_std_raw": "/kaggle/input/datasets/khhanhlinh/lp-prop-pipeline-s2/work_clean/props_std_raw.jsonl",
+ "props_lp_raw": "/kaggle/input/datasets/khhanhlinh/lp-prop-pipeline-s2/work_clean/props_lp_raw.jsonl",
+ "props_lp_edge_only": "/kaggle/input/datasets/khhanhlinh/lp-prop-pipeline-s2/work_clean/props_lp_edge_only.jsonl"
+}
+{
+ "articles_in": 9715,
+ "articles_kept": 7391,
+ "articles_eval": 6468,
+ "docs_kept": 107,
+ "removed": {
+  "draft": 2316,
+  "heading_only": 5,
+  "duplicate": 3
+ },
+ "passages": 12425,
+ "passages_new": 57,
+ "articles_with_new_passages": 56,
+ "gold_spans": 3562,
+ "gold_spans_eval": 3063,
+ "qa_generic": 22173,
+ "props": {
+  "std": {
+   "articles": 7391,
+   "props": 57641,
+   "pointers": 0
+  },
+  "lp": {
+   "articles": 7391,
+   "props": 57320,
+   "pointers": 19448
+  },
+  "std_raw": {
+   "articles": 7391,
+   "props": 57433,
+   "pointers": 0
+  },
+  "lp_raw": {
+   "articles": 7391,
+   "props": 57004,
+   "pointers": 28512
+  },
+  "lp_edge_only": {
+   "articles": 7391,
+   "props": 57004,
+   "pointers": 19448
+  }
+ }
+}

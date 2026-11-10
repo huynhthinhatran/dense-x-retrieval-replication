@@ -13,4 +13,5 @@ Run inside `notebooks/lp_prop_v2_nb2_eval.ipynb`.
 * `results/s5_tables_judge.md`, `s5_results_judge.json`: main Tier 3 table (condition label from the judge).
 * `results/s5_tables_phrase.md`, `s5_results_phrase.json`: same with the phrase-match condition label.
 * `results/s5_tables_calib.md`: judge check on the first 100 questions, run before the full judge.
-* Judge sanity (full run): positive cases 99.6% kept (4,234 answers), negative cases 11.9% (506); 27.4% of the 1,563 abstentions judged correct.
+* Judge sanity (full run): positive cases 99.6% kept (4,234 answers), negative cases 11.9% (506); 27.4% of the 1,563 abstentions initially judged correct.
+* Strict Abstention Enforcement: In the final paper revision (§5.4), answers matching the abstention pattern (`ABSTAIN_PAT`) are strictly overridden to incorrect (`correct = 0, cond_acc = 0`). All system rankings and paired bootstrap significance conclusions hold with 100% consistency across both the 1,200 full evaluation questions and the 1,100 non-calibration subset; verified in `notebooks/lp_prop_v2_nb3_feedback_fixes.ipynb`.

@@ -44,9 +44,10 @@ Cond-Acc counts abstentions ("not enough information") as incorrect. Oracle (ful
 
 Run on Kaggle with 2×T4 GPUs and Internet on, using **Save Version → Save & Run All**:
 
-1. S2 (propositionizer): see `s2_propositionizer/README.md`.
+1. S2 (propositionizer and refinement): see `s2_propositionizer/README.md`; `s2_propositionizer/scripts/s2_refine_and_repair.py` rebuilds `props_lp_edge_only`, `props_lp` and `props_std` from the raw outputs (byte-identical to the files used in the paper).
 2. `notebooks/lp_prop_v2_nb1_questions.ipynb`: S1 + S1b (about 1–1.5 h).
 3. `notebooks/lp_prop_v2_nb2_eval.ipynb`: S3 + S5 + S6 (about 6–7.5 h).
+4. Checks requested in the review (CPU only): `analysis/` scripts, also run in `notebooks/lp_prop_v2_nb3_feedback_fixes.ipynb`.
 
 Each notebook writes the scripts it runs with `%%writefile`; the copies in the step folders are the same code.
 
@@ -63,6 +64,6 @@ Language: documentation is in English. Code comments, log messages and notebook 
 ├── s5_reader_judge/         {scripts, results}
 ├── s6_evaluation/           {scripts, results}
 ├── analysis/                {scripts, results}  checks requested in the review
-├── notebooks/               Kaggle notebooks (S1+S1b, S3+S5+S6)
+├── notebooks/               Kaggle notebooks (S1+S1b, S3+S5+S6, review checks)
 └── docs/                    planning documents (archive, in Vietnamese)
 ```

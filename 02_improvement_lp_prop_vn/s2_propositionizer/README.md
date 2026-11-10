@@ -22,7 +22,7 @@ Owner: Nguyen Huu Gia Bao
 * Execution notebook: `02_improvement_lp_prop_vn/notebooks/lp_prop_v2_nb3_feedback_fixes.ipynb`.
 
 ## Effect of refinement (measured on the output files, whole corpus)
-* Pointers 28,512 (`lp_raw`) → 19,448 (`lp_edge_only`, `lp`): 12,252 removed (pruned), 631 inverted, 3,063 newly attached across the full 7,391 articles (2,708 on $\mathcal{D}_{\text{eval}}$ and 355 on $\mathcal{D}_{\text{dev}}$; its exact count coincidence with the 3,063 evaluation gold spans is purely numerical across distinct sample scopes).
+* Pointers 28,512 (`lp_raw`) → 19,448 (`lp_edge_only`, `lp`). Of the 19,448 refined pointers, 15,754 are raw pointers kept (1,508 retyped), 631 are inverted raw pointers and 3,063 are newly attached (2,708 on eval, 355 on dev). 12,189 distinct raw pointers are removed, mostly HIỆU_LỰC (9,850), GIỚI_HẠN (1,505) and DẪN_CHIẾU (761). The script's own "Pruned" counter (12,252) counts (head, tail) pairs differently and is not the number in the paper. That 3,063 also equals the number of eval gold spans is a coincidence: the script never reads `gold_spans.jsonl`, and 1,942 attached pointers lie in articles without any gold span (see `analysis/results/ablation_attached_pointers.md`).
 * Proposition repair adds 316 propositions to 239 articles (`lp_edge_only` → `lp`) and 208 to 142 articles (`std_raw` → `std`); nothing is removed or rewritten; each added proposition is a clause sentence copied from the article.
 
 | | props | pointers |

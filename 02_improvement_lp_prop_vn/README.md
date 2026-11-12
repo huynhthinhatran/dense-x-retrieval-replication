@@ -59,7 +59,7 @@ Language: documentation is in English. Code comments, log messages and notebook 
 02_improvement_lp_prop_vn/
 ├── s1_data_curation/        {scripts, results}
 ├── s1b_question_generation/ {scripts, results}
-├── s2_propositionizer/      {scripts, notebook, results}
+├── s2_propositionizer/      {scripts}
 ├── s3_retrieval/            {scripts, results}
 ├── s5_reader_judge/         {scripts, results}
 ├── s6_evaluation/           {scripts, results}

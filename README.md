@@ -22,6 +22,7 @@ dense-x-retrieval-replication/
     ├── s3_retrieval/                # S3  BGE-M3 retrieval and fill_budget
     ├── s5_reader_judge/             # S5  reader, LLM judge, Tier 3
     ├── s6_evaluation/               # S6  Tier 1, Tier 2, bootstrap
+    ├── analysis/                    # CPU-only review checks and ablations
     ├── notebooks/                   # Kaggle notebooks that run the pipeline
     └── README.md
 ```
